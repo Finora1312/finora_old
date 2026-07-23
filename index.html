@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18337522187"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18337522187');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Finora – International Disputes Practice | Complex Digital Asset Matters</title>
+<meta name="description" content="Finora is a specialist international legal practice advising individuals, businesses and institutions in complex cross-border financial disputes involving digital assets, forensic financial analysis and international litigation strategy."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+/* ════════════════════════════════════
+   COLOR TOKENS
+════════════════════════════════════ */
+:root,[data-theme="dark"]{
+  --bg:          #0B1724;
+  --surface:     #152030;
+  --surface2:    #0E1A29;
+  --accent:      #2563EB;
+  --accent-dark: #1D4ED8;
+  --gold:        #D4AF37;
+  --gold-dark:   #B8960F;
+  --text:        #F8FAFC;
+  --text-muted:  rgba(248,250,252,.65);
+  --text-dim:    rgba(248,250,252,.35);
+  --border:      rgba(248,250,252,.09);
+  --border-mid:  rgba(248,250,252,.18);
+  --hero-bg:     #060E1A;
+  --navbar-bg:   #060E1A;
+  --input-bg:    #0E1A29;
+  --input-text:  #F8FAFC;
+  --card-shadow: 0 4px 28px rgba(0,0,0,.5);
+  --success-bg:  #0A1F36;
+  --success-border:#1B4A7A;
+  --success-text:#60A5FA;
+}
+[data-theme="light"]{
+  --bg:          #EEF2FA;
+  --surface:     #FFFFFF;
+  --surface2:    #E4EAF5;
+  --accent:      #1E40AF;
+  --accent-dark: #1E3A8A;
+  --gold:        #A07810;
+  --gold-dark:   #8A660A;
+  --text:        #0B1724;
+  --text-muted:  rgba(11,23,36,.64);
+  --text-dim:    rgba(11,23,36,.38);
+  --border:      rgba(11,23,36,.11);
+  --border-mid:  rgba(11,23,36,.2);
+  --hero-bg:     #060E1A;
+  --navbar-bg:   #FFFFFF;
+  --input-bg:    #FFFFFF;
+  --input-text:  #0B1724;
+  --card-shadow: 0 4px 24px rgba(11,23,36,.1);
+  --success-bg:  #EFF6FF;
+  --success-border:#BFDBFE;
+  --success-text:#1D4ED8;
+}
+
+/* ════════════════════════════════════
+   RESET & BASE
+════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  transition:background .25s,color .25s;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.18}
+a{color:inherit;text-decoration:none}
+button{font-family:'Inter',sans-serif;cursor:pointer}
+img,svg{max-width:100%}
+
+/* ════════════════════════════════════
+   LAYOUT
+════════════════════════════════════ */
+.container{max-width:1160px;margin:0 auto;padding:0 1.5rem}
+.section{padding:5rem 0}
+.section-light{background:var(--surface2)}
+.section-alt{background:var(--surface)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.grid-auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:1.5rem}
+@media(max-width:960px){.grid-2,.grid-4{grid-template-columns:1fr;gap:2rem}.grid-3{grid-template-columns:1fr;gap:1.25rem}}
+@media(max-width:600px){.grid-auto{grid-template-columns:1fr}}
+
+/* ════════════════════════════════════
+   TYPOGRAPHY
+════════════════════════════════════ */
+.section-tag{display:block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.accent-rule{display:block;width:40px;height:3px;background:var(--gold);border-radius:2px;margin-bottom:1rem}
+.section-title{font-size:clamp(1.55rem,3vw,2.1rem);color:var(--text);margin-bottom:.4rem}
+.text-center{text-align:center}
+
+/* ════════════════════════════════════
+   BUTTONS
+════════════════════════════════════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.68rem 1.55rem;border-radius:5px;font-size:.875rem;font-weight:600;border:none;cursor:pointer;transition:background .18s,color .18s,border-color .18s,box-shadow .18s;line-height:1;min-height:44px}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 2px 12px rgba(37,99,235,.3)}
+.btn-accent:hover{background:var(--accent-dark);box-shadow:0 4px 20px rgba(37,99,235,.45)}
+.btn-ghost{background:transparent;color:var(--text);border:1.5px solid var(--border-mid)}
+.btn-ghost:hover{background:rgba(37,99,235,.1);border-color:var(--accent);color:var(--accent)}
+.btn-sm{padding:.42rem .95rem;font-size:.8rem;min-height:38px}
+.btn-full{width:100%;justify-content:center;padding:.75rem}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* ════════════════════════════════════
+   NAVBAR
+════════════════════════════════════ */
+#navbar{
+  position:sticky;top:0;z-index:200;
+  background:var(--navbar-bg);
+  border-bottom:1px solid var(--border);
+  height:64px;display:flex;align-items:center;
+  transition:background .25s,border-color .25s;
+}
+.nav-inner{display:flex;align-items:center;gap:1rem;width:100%}
+.nav-logo{display:flex;align-items:center;gap:.7rem;background:none;border:none;cursor:pointer;flex-shrink:0;padding:0;min-height:44px}
+.nav-logo-mark{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--accent);letter-spacing:-.02em}
+.nav-logo-divider{width:1px;height:24px;background:var(--border-mid);flex-shrink:0}
+.nav-logo-sub{font-size:.6rem;color:var(--text-muted);font-weight:500;max-width:155px;line-height:1.3;text-align:left}
+.nav-links{display:flex;align-items:center;gap:1.6rem;margin-left:auto}
+.nav-link{font-size:.85rem;font-weight:500;color:var(--text-muted);background:none;border:none;padding:4px 0;cursor:pointer;transition:color .15s;min-height:44px}
+.nav-link:hover,.nav-link.active{color:var(--accent);font-weight:600}
+.nav-controls{display:flex;align-items:center;gap:.5rem;margin-left:auto;flex-shrink:0}
+.theme-toggle{background:var(--surface);border:1px solid var(--border-mid);border-radius:50px;padding:3px;width:52px;height:28px;cursor:pointer;display:flex;align-items:center;position:relative;transition:background .2s;flex-shrink:0;min-height:44px;width:52px}
+.theme-toggle-knob{width:22px;height:22px;border-radius:50%;background:var(--accent);position:absolute;left:3px;transition:left .22s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;justify-content:center;font-size:11px}
+[data-theme="light"] .theme-toggle-knob{left:27px}
+.theme-toggle-icon{pointer-events:none;user-select:none}
+.lang-btn{background:none;border:1px solid var(--border-mid);border-radius:4px;padding:.26rem .55rem;font-size:.73rem;font-weight:700;letter-spacing:.06em;color:var(--text-muted);cursor:pointer;transition:all .15s;min-height:32px}
+.lang-btn:hover,.lang-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.hamburger{display:none;background:none;border:none;padding:10px 6px;flex-direction:column;gap:5px;cursor:pointer;min-height:44px;min-width:44px;align-items:center;justify-content:center}
+.hamburger span{display:block;width:21px;height:2px;background:var(--text-muted);border-radius:2px;transition:transform .25s,opacity .25s}
+@media(max-width:780px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  /* Hide the CTA button in navbar on mobile — it's in the mobile menu */
+  .nav-controls .btn-accent{display:none}
+}
+@media(max-width:400px){
+  .nav-logo-divider,.nav-logo-sub{display:none}
+  .nav-controls{gap:.3rem}
+  .lang-btn{padding:.2rem .4rem;font-size:.68rem}
+}
+#mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:var(--navbar-bg);z-index:190;padding:1.5rem;border-top:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,.25);flex-direction:column;gap:1.1rem;transition:background .25s;max-height:calc(100vh - 64px);overflow-y:auto}
+#mobile-menu.open{display:flex}
+.mobile-nav-link{font-size:.95rem;font-weight:500;color:var(--text-muted);background:none;border:none;text-align:left;padding:.5rem 0;cursor:pointer;min-height:44px;display:flex;align-items:center}
+.mobile-nav-link:hover{color:var(--accent)}
+
+/* ════════════════════════════════════
+   PAGES
+════════════════════════════════════ */
+.page{display:none}
+.page.active{display:block}
+
+/* ════════════════════════════════════
+   HERO + PARALLAX
+════════════════════════════════════ */
+.hero{
+  background:var(--hero-bg);
+  position:relative;overflow:hidden;
+  padding:5.5rem 0 6rem;
+}
+.hero-dots{
+  position:absolute;inset:0;
+  background-image:radial-gradient(circle at 1px 1px,rgba(37,99,235,.22) 1px,transparent 0);
+  background-size:30px 30px;
+  pointer-events:none;
+  will-change:transform;
+}
+.hero-glow{
+  position:absolute;top:-25%;right:-12%;width:60%;height:150%;
+  background:radial-gradient(ellipse at top right,rgba(37,99,235,.22),transparent 65%);
+  pointer-events:none;
+  will-change:transform;
+}
+.hero-glow-gold{
+  position:absolute;bottom:-20%;left:-10%;width:50%;height:80%;
+  background:radial-gradient(ellipse at bottom left,rgba(212,175,55,.1),transparent 65%);
+  pointer-events:none;
+  will-change:transform;
+}
+.hero-float{
+  position:absolute;pointer-events:none;border-radius:50%;will-change:transform;
+  animation:heroFloat 8s ease-in-out infinite;
+}
+.hero-float-1{
+  width:280px;height:280px;
+  top:10%;right:8%;
+  background:radial-gradient(circle,rgba(37,99,235,.07),transparent 70%);
+  border:1px solid rgba(37,99,235,.12);
+  animation-duration:9s;
+}
+.hero-float-2{
+  width:160px;height:160px;
+  bottom:15%;left:5%;
+  background:radial-gradient(circle,rgba(212,175,55,.07),transparent 70%);
+  border:1px solid rgba(212,175,55,.12);
+  animation-duration:7s;animation-delay:-3s;
+}
+.hero-float-3{
+  width:80px;height:80px;
+  top:30%;left:35%;
+  background:rgba(37,99,235,.05);
+  border:1px solid rgba(37,99,235,.1);
+  animation-duration:11s;animation-delay:-1.5s;
+}
+@keyframes heroFloat{
+  0%,100%{transform:translateY(0) rotate(0deg)}
+  33%{transform:translateY(-12px) rotate(2deg)}
+  66%{transform:translateY(8px) rotate(-1.5deg)}
+}
+.hero-content{position:relative;z-index:2}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:3.5rem;align-items:center;
+}
+/* ── MOBILE: form card moves ABOVE hero text ── */
+@media(max-width:960px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:2.5rem;
+  }
+  .hero-grid .hero-form-card{
+    order:-1;
+  }
+}
+.hero-tag{color:var(--gold)!important}
+.hero h1{font-size:clamp(2rem,4.5vw,3.2rem);color:#F8FAFC;margin-bottom:1.1rem;font-weight:700}
+.hero p{font-size:1rem;color:rgba(248,250,252,.76);margin-bottom:2.25rem;max-width:530px;line-height:1.75}
+.hero-btns{display:flex;flex-wrap:wrap;gap:.85rem}
+.hero-form-card{
+  background:rgba(21,32,48,.92);
+  border:1px solid rgba(248,250,252,.14);
+  border-top:3px solid var(--gold);
+  border-radius:8px;padding:2rem 1.75rem;
+  box-shadow:0 8px 40px rgba(0,0,0,.5);
+  backdrop-filter:blur(10px);
+  width:100%;
+}
+.hero-form-card label{color:rgba(248,250,252,.68)}
+.hero-form-title{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:#F8FAFC;margin-bottom:.35rem}
+.hero-form-sub{font-size:.8rem;color:rgba(248,250,252,.58);margin-bottom:1.5rem}
+.hero-form-card input{background:rgba(6,14,26,.7);border-color:rgba(248,250,252,.18);color:#F8FAFC}
+.hero-form-card input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+.hero-form-card input::placeholder{color:rgba(248,250,252,.32)}
+
+/* ════════════════════════════════════
+   HIGHLIGHTS BAR
+════════════════════════════════════ */
+.stats-bar{background:var(--surface2);border-bottom:1px solid var(--border);padding:2.5rem 0;transition:background .25s}
+.stat-item{border-left:3px solid var(--gold);padding-left:1rem}
+@media(max-width:960px){.stats-bar .grid-4{grid-template-columns:1fr 1fr;gap:1.5rem}}
+.stat-value{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;color:var(--text);line-height:1.2}
+.stat-label{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-top:.15rem}
+
+/* ════════════════════════════════════
+   CARDS
+════════════════════════════════════ */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:1.75rem;transition:background .25s,border-color .25s}
+.card-hover{transition:transform .2s,box-shadow .2s,background .25s,border-color .25s;cursor:pointer}
+.card-hover:hover{transform:translateY(-3px);box-shadow:var(--card-shadow);border-color:var(--accent)}
+.card-icon{width:46px;height:46px;background:rgba(37,99,235,.12);border-radius:7px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.card-icon svg{width:22px;height:22px;stroke:var(--accent)}
+.card-title{font-size:1rem;color:var(--text);margin-bottom:.4rem;font-family:'Playfair Display',serif;font-weight:700}
+.card-text{font-size:.875rem;color:var(--text-muted);line-height:1.65}
+.page-header{background:var(--hero-bg);padding:4rem 0;border-bottom:1px solid rgba(248,250,252,.09)}
+.page-header h1{font-size:clamp(1.9rem,4vw,2.8rem);color:#F8FAFC;margin-top:.4rem}
+.page-header .section-tag{color:var(--gold)}
+.trust-icon{width:42px;height:42px;background:rgba(37,99,235,.12);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.trust-icon svg{width:20px;height:20px;stroke:var(--accent)}
+.trust-item{display:flex;gap:.85rem;align-items:flex-start}
+.trust-title{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.25rem}
+.trust-text{font-size:.875rem;color:var(--text-muted);line-height:1.65}
+/* Professional differentiator cards (replaces testimonials) */
+.differentiator-card{
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-left:3px solid var(--gold);
+  border-radius:7px;
+  padding:1.5rem;
+  transition:background .25s;
+}
+.differentiator-card blockquote{
+  font-style:italic;
+  color:var(--text-muted);
+  font-size:.9rem;
+  line-height:1.7;
+  margin-bottom:.85rem;
+}
+.differentiator-card-title{font-family:'Playfair Display',serif;font-weight:700;font-size:.95rem;color:var(--text)}
+.differentiator-card-sub{font-size:.78rem;color:var(--text-dim)}
+.cta-band{background:var(--accent);padding:4.5rem 0;text-align:center}
+.cta-band h2{font-size:clamp(1.5rem,3vw,2.1rem);color:#fff;margin-bottom:.7rem}
+.cta-band p{color:rgba(255,255,255,.85);font-size:.95rem;max-width:520px;margin:0 auto 1.75rem}
+/* International section highlight */
+.intl-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-top:3px solid var(--accent);
+  border-radius:7px;
+  padding:1.75rem;
+  transition:background .25s;
+}
+.intl-card-title{font-size:1rem;color:var(--text);margin:.6rem 0 .4rem;font-family:'Playfair Display',serif;font-weight:700}
+.intl-card-text{font-size:.875rem;color:var(--text-muted);line-height:1.65}
+/* Value cards */
+.value-card{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:7px;padding:1.5rem;transition:background .25s}
+.value-title{font-size:1.05rem;color:var(--text);margin:.7rem 0 .4rem;font-family:'Playfair Display',serif;font-weight:700}
+.value-text{font-size:.875rem;color:var(--text-muted);line-height:1.6}
+.value-icon svg{stroke:var(--accent)}
+/* Expertise */
+.expertise-item{display:flex;align-items:flex-start;gap:.7rem;padding:.85rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:5px;font-size:.875rem;color:var(--text-muted);font-weight:500;transition:background .25s}
+.expertise-item svg{flex-shrink:0;stroke:var(--accent);margin-top:1px}
+/* Legal process steps */
+.process-step{
+  display:flex;
+  gap:1.25rem;
+  align-items:flex-start;
+  padding:1.25rem;
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-radius:7px;
+  transition:background .25s;
+}
+.process-num{
+  width:38px;height:38px;
+  border-radius:50%;
+  background:rgba(37,99,235,.14);
+  border:2px solid rgba(37,99,235,.35);
+  color:var(--accent);
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:.95rem;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.process-title{font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:.2rem}
+.process-text{font-size:.82rem;color:var(--text-muted);line-height:1.6}
+
+/* ════════════════════════════════════
+   FORMS
+════════════════════════════════════ */
+.form-group{margin-bottom:1.1rem}
+label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted);margin-bottom:.32rem}
+input,textarea,select{width:100%;padding:.58rem .85rem;border:1px solid var(--border-mid);border-radius:5px;font-family:'Inter',sans-serif;font-size:.875rem;color:var(--input-text);background:var(--input-bg);outline:none;transition:border-color .18s,box-shadow .18s,background .25s,color .25s;min-height:44px}
+input:focus,textarea:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.18)}
+textarea{resize:vertical;min-height:auto}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:540px){.form-row{grid-template-columns:1fr}}
+.checkbox-wrap{display:flex;gap:.65rem;align-items:flex-start}
+.checkbox-wrap input[type=checkbox]{width:20px;height:20px;flex-shrink:0;margin-top:2px;accent-color:var(--accent);cursor:pointer;min-height:20px}
+.checkbox-label{font-size:.82rem;color:var(--text-muted);line-height:1.55;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400}
+/* Steps */
+.steps{display:flex;margin-bottom:2rem}
+.step{flex:1;text-align:center;position:relative;padding:.35rem}
+.step:not(:last-child)::after{content:'';position:absolute;top:12px;left:50%;width:100%;height:2px;background:var(--border-mid);z-index:0}
+.step-dot{width:26px;height:26px;border-radius:50%;background:var(--surface);border:2px solid var(--border-mid);color:var(--text-muted);display:flex;align-items:center;justify-content:center;margin:0 auto .32rem;font-weight:700;font-size:.75rem;position:relative;z-index:1;transition:background .2s,color .2s,border-color .2s}
+.step.active .step-dot{background:var(--accent);color:#fff;border-color:var(--accent)}
+.step.done .step-dot{background:var(--surface);color:var(--accent);border-color:var(--accent)}
+.step-label{font-size:.72rem;color:var(--text-dim);font-weight:500}
+.step.active .step-label{color:var(--accent);font-weight:700}
+.step.done .step-label{color:var(--text-muted)}
+/* Accordion */
+.accordion-item{border-bottom:1px solid var(--border)}
+.accordion-btn{width:100%;background:none;border:none;padding:.85rem 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:'Inter',sans-serif;font-size:.875rem;font-weight:600;color:var(--text-muted);min-height:44px}
+.accordion-btn:hover{color:var(--accent)}
+.accordion-icon{flex-shrink:0;stroke:currentColor;transition:transform .25s}
+.accordion-icon.open{transform:rotate(180deg)}
+.accordion-body{max-height:0;overflow:hidden;transition:max-height .28s ease,padding .28s ease;font-size:.85rem;color:var(--text-muted);line-height:1.7}
+.accordion-body.open{max-height:320px;padding-bottom:.85rem}
+/* Success / error */
+.success-box{background:var(--success-bg);border:1px solid var(--success-border);border-radius:7px;padding:2rem;text-align:center}
+.success-box h3{font-family:'Playfair Display',serif;color:var(--success-text);margin:.7rem 0 .5rem;font-size:1.5rem}
+.success-box p{color:var(--success-text);font-size:.875rem;opacity:.9}
+.success-ref{background:rgba(37,99,235,.15);border:1px solid rgba(37,99,235,.3);border-radius:5px;padding:.6rem 1.2rem;display:inline-block;margin:.5rem 0 1rem;font-family:'Playfair Display',serif;font-weight:700;font-size:1.15rem;color:var(--accent)}
+.error-msg{background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.3);border-radius:4px;padding:.6rem .9rem;font-size:.82rem;color:var(--accent);margin-bottom:.85rem}
+.review-row{display:flex;gap:1rem;margin-bottom:.65rem;font-size:.875rem}
+.review-label{font-weight:700;color:var(--text-muted);min-width:145px;flex-shrink:0}
+.review-value{color:var(--text)}
+/* Prose */
+.prose{max-width:780px;color:var(--text-muted);font-size:.95rem;line-height:1.8}
+.prose h2{font-size:1.35rem;color:var(--text);margin:2.25rem 0 .7rem;font-family:'Playfair Display',serif}
+.prose p{margin-bottom:1rem}
+.prose strong{color:var(--text)}
+
+/* ════════════════════════════════════
+   FOOTER — always dark
+════════════════════════════════════ */
+footer{background:var(--hero-bg);border-top:1px solid rgba(248,250,252,.09);padding:4rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.6fr;gap:3rem;margin-bottom:3rem}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.footer-grid{grid-template-columns:1fr}}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#F8FAFC;margin-bottom:.8rem}
+.footer-tagline{color:rgba(248,250,252,.58);font-size:.85rem;line-height:1.7;margin-bottom:1rem}
+.footer-col-title{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,250,252,.32);margin-bottom:.85rem}
+.footer-link{display:block;color:rgba(248,250,252,.58);font-size:.85rem;padding:.2rem 0;background:none;border:none;text-align:left;cursor:pointer;transition:color .15s;min-height:36px;display:flex;align-items:center}
+.footer-link:hover{color:var(--gold)}
+.footer-contact-item{display:flex;gap:.55rem;align-items:flex-start;margin-bottom:.55rem}
+.footer-contact-icon{flex-shrink:0;margin-top:2px}
+.footer-contact-text{color:rgba(248,250,252,.58);font-size:.8rem;line-height:1.5}
+.footer-bottom{border-top:1px solid rgba(248,250,252,.09);padding-top:1.5rem;text-align:center;color:rgba(248,250,252,.3);font-size:.78rem}
+/* Utility */
+.hidden{display:none!important}
+.mt-2{margin-top:1rem}.mt-3{margin-top:1.5rem}.mt-4{margin-top:2rem}
+.mb-2{margin-bottom:1rem}.mb-3{margin-bottom:1.5rem}.mb-4{margin-bottom:2rem}
+.gap-col{display:flex;flex-direction:column;gap:1.25rem}
+.icon-accent{stroke:var(--accent)}
+
+/* ════════════════════════════════════
+   TABLET BREAKPOINTS — 768px
+════════════════════════════════════ */
+@media(max-width:768px){
+  .container{padding:0 1.1rem}
+  .section{padding:3.5rem 0}
+  .hero{padding:3.5rem 0 4rem}
+  .page-header{padding:2.5rem 0}
+  .hero h1{font-size:clamp(1.75rem,5vw,2.4rem)}
+  .hero p{font-size:.93rem;max-width:100%}
+  .section-title{font-size:clamp(1.4rem,4vw,1.85rem)}
+  .hero-form-card{padding:1.75rem 1.5rem}
+  .stats-bar{padding:2rem 0}
+  .stats-bar .grid-4{grid-template-columns:1fr 1fr;gap:1.25rem}
+  .cta-band{padding:3.5rem 0}
+  .cta-band p{font-size:.9rem}
+  .card{padding:1.5rem}
+  .grid-2{gap:1.75rem}
+  /* review rows on tablet */
+  .review-row{flex-wrap:wrap}
+  .review-label{min-width:120px}
+  /* step labels shorten */
+  .step-label{font-size:.65rem}
+  footer{padding:3rem 0 1.5rem}
+  .footer-grid{margin-bottom:2rem}
+}
+
+/* ════════════════════════════════════
+   MOBILE PHONE BREAKPOINTS — 480px
+════════════════════════════════════ */
+@media(max-width:480px){
+  .container{padding:0 .875rem}
+  .section{padding:2.5rem 0}
+  .hero{padding:2rem 0 2.5rem}
+  .hero h1{font-size:clamp(1.5rem,6.5vw,2rem);margin-bottom:.85rem}
+  .hero p{font-size:.875rem;margin-bottom:1.5rem}
+  .hero-grid{gap:2rem}
+  .hero-form-card{padding:1.4rem 1.1rem}
+  .hero-form-title{font-size:1rem}
+  .hero-btns{flex-direction:column;gap:.65rem}
+  .hero-btns .btn{width:100%}
+  .page-header{padding:2rem 0}
+  .page-header h1{font-size:clamp(1.5rem,6vw,2rem)}
+  .section-title{font-size:clamp(1.25rem,5vw,1.6rem)}
+  .section-tag{font-size:.65rem}
+  /* stats */
+  .stats-bar{padding:1.75rem 0}
+  .stats-bar .grid-4{grid-template-columns:1fr 1fr;gap:1rem}
+  .stat-value{font-size:1.25rem}
+  .stat-label{font-size:.65rem}
+  /* cards */
+  .card{padding:1.25rem}
+  .card-title{font-size:.95rem}
+  .grid-auto{grid-template-columns:1fr;gap:1rem}
+  /* trust items */
+  .trust-item{gap:.65rem}
+  .trust-icon{width:36px;height:36px;flex-shrink:0}
+  /* differentiator cards */
+  .differentiator-card{padding:1.1rem}
+  .differentiator-card blockquote{font-size:.85rem}
+  /* CTA band */
+  .cta-band{padding:2.5rem 0}
+  .cta-band h2{font-size:clamp(1.25rem,5vw,1.6rem)}
+  .cta-band p{font-size:.85rem;margin-bottom:1.25rem}
+  /* intl cards */
+  .intl-card{padding:1.25rem}
+  /* value cards */
+  .value-card{padding:1.1rem}
+  /* process steps */
+  .process-step{padding:1rem;gap:1rem}
+  .process-num{width:32px;height:32px;font-size:.85rem}
+  /* forms */
+  .form-group{margin-bottom:.9rem}
+  input,select{min-height:46px;font-size:1rem}
+  textarea{font-size:1rem}
+  /* step indicators */
+  .steps{margin-bottom:1.5rem}
+  .step-label{font-size:.6rem}
+  .step-dot{width:24px;height:24px;font-size:.7rem}
+  /* review */
+  .review-row{flex-direction:column;gap:.2rem;margin-bottom:.9rem}
+  .review-label{min-width:unset;font-size:.8rem}
+  .review-value{font-size:.875rem}
+  /* success box */
+  .success-box{padding:1.5rem 1rem}
+  .success-box h3{font-size:1.25rem}
+  /* prose */
+  .prose{font-size:.875rem}
+  .prose h2{font-size:1.2rem}
+  /* footer */
+  footer{padding:2.5rem 0 1.25rem}
+  .footer-grid{grid-template-columns:1fr;gap:1.5rem;margin-bottom:1.5rem}
+  .footer-brand{font-size:1.25rem}
+  .footer-tagline{font-size:.8rem}
+  /* about page grids */
+  .grid-3{gap:1rem}
+}
+
+/* ════════════════════════════════════
+   VERY SMALL — 360px
+════════════════════════════════════ */
+@media(max-width:360px){
+  .container{padding:0 .75rem}
+  .hero h1{font-size:1.4rem}
+  .stats-bar .grid-4{grid-template-columns:1fr}
+  .hero-form-card{padding:1.2rem 1rem}
+  .nav-logo-mark{font-size:1.3rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════
+     NAVBAR
+════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <button class="nav-logo" onclick="showPage('home')">
+        <span class="nav-logo-mark">Finora</span>
+        <span class="nav-logo-divider" style="width:1px;height:24px;background:var(--border-mid)"></span>
+        <span class="nav-logo-sub" id="nav-sub">International<br>Disputes Practice</span>
+      </button>
+      <div class="nav-links">
+        <button class="nav-link active" id="nl-home"     onclick="showPage('home')"     data-i18n="nav_home">Startseite</button>
+        <button class="nav-link"        id="nl-about"    onclick="showPage('about')"    data-i18n="nav_about">Kanzlei</button>
+        <button class="nav-link"        id="nl-services" onclick="showPage('services')" data-i18n="nav_services">Leistungen</button>
+        <button class="nav-link"        id="nl-contact"  onclick="showPage('contact')"  data-i18n="nav_contact">Kontakt</button>
+      </div>
+      <div class="nav-controls">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Dark/Light mode" aria-label="Toggle theme">
+          <span class="theme-toggle-knob"><span class="theme-toggle-icon" id="theme-icon">🌙</span></span>
+        </button>
+        <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
+        <button class="lang-btn"        id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="btn btn-accent btn-sm" onclick="showPage('submit-case')" data-i18n="nav_case">Konsultation anfragen</button>
+        <button class="hamburger" onclick="toggleMobile()" aria-label="Menü" aria-expanded="false" id="hamburger-btn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <button class="mobile-nav-link" onclick="showPage('home');closeMobile()"     data-i18n="nav_home">Startseite</button>
+  <button class="mobile-nav-link" onclick="showPage('about');closeMobile()"    data-i18n="nav_about">Kanzlei</button>
+  <button class="mobile-nav-link" onclick="showPage('services');closeMobile()" data-i18n="nav_services">Leistungen</button>
+  <button class="mobile-nav-link" onclick="showPage('contact');closeMobile()"  data-i18n="nav_contact">Kontakt</button>
+  <button class="btn btn-accent btn-full" onclick="showPage('submit-case');closeMobile()" data-i18n="nav_case">Konsultation anfragen</button>
+</div>
+
+<!-- ════════════════════════════════════
+     HOME PAGE
+════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-dots"      id="px-dots"></div>
+    <div class="hero-glow"      id="px-glow"></div>
+    <div class="hero-glow-gold" id="px-gold"></div>
+    <div class="hero-float hero-float-1" id="px-f1"></div>
+    <div class="hero-float hero-float-2" id="px-f2"></div>
+    <div class="hero-float hero-float-3" id="px-f3"></div>
+
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <!-- Hero text (on mobile this becomes ORDER 0, form is ORDER -1, so form appears first) -->
+        <div>
+          <span class="section-tag hero-tag" data-i18n="hero_tag">Finora — Internationale Rechtspraxis für komplexe Finanzstreitigkeiten</span>
+          <h1 data-i18n="hero_title">Spezialisierte Rechtsberatung in komplexen Streitigkeiten rund um digitale Vermögenswerte</h1>
+          <p data-i18n="hero_sub">Finora ist eine spezialisierte internationale Rechtspraxis, die Privatpersonen, Unternehmen und Institutionen in komplexen grenzüberschreitenden Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, forensischer Finanzanalyse und internationaler Litigationsstrategie berät.</p>
+          <div class="hero-btns">
+            <button class="btn btn-accent" onclick="showPage('submit-case')" data-i18n="hero_cta">Vertrauliche Bewertung anfordern</button>
+            <button class="btn" onclick="showPage('contact')" style="background:transparent;color:#F8FAFC;border:1.5px solid rgba(248,250,252,.3)" onmouseover="this.style.background='rgba(37,99,235,.2)';this.style.borderColor='rgba(37,99,235,.7)'" onmouseout="this.style.background='transparent';this.style.borderColor='rgba(248,250,252,.3)'" data-i18n="hero_more">Mit unserem Rechtsteam sprechen</button>
+          </div>
+        </div>
+
+        <!-- Intake card — on mobile, order:-1 moves it above the text -->
+        <div class="hero-form-card">
+          <div class="hero-form-title" data-i18n="quick_form_title">Vertrauliche Konsultation anfragen</div>
+          <div class="hero-form-sub"   data-i18n="quick_form_sub">Ihre Anfrage wird vertraulich behandelt und zeitnah geprüft.</div>
+          <div id="quick-success" class="hidden" style="text-align:center;padding:1.5rem 0">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" style="stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block;margin:0 auto .75rem"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+            <div style="font-family:'Playfair Display',serif;font-size:1rem;color:#F8FAFC;font-weight:700;margin-bottom:.4rem" data-i18n="quick_success_title">Anfrage eingegangen</div>
+            <div style="font-size:.8rem;color:rgba(248,250,252,.62)" data-i18n="quick_success_text">Unser Rechtsteam wird Ihre Anfrage prüfen und sich kurzfristig mit Ihnen in Verbindung setzen.</div>
+            <button class="btn btn-sm" onclick="resetQuickForm()" style="margin-top:1rem;background:transparent;color:#F8FAFC;border:1.5px solid rgba(248,250,252,.25)" data-i18n="quick_reset">Neue Anfrage</button>
+          </div>
+          <form
+            id="quick-form"
+            action="https://formspree.io/f/maqrdyjo"
+            method="POST"
+            onsubmit="submitQuickForm(event)">
+            <input type="hidden" name="_subject" value="New Consultation Request - Finora">
+            <input type="hidden" name="_replyto" value="">
+            <div class="form-row">
+              <div class="form-group"><label data-i18n="quick_firstname">Vorname *</label><input type="text" id="qf-first" name="first_name" required/></div>
+              <div class="form-group"><label data-i18n="quick_lastname">Nachname *</label><input type="text" id="qf-last" name="last_name" required/></div>
+            </div>
+            <div class="form-group"><label data-i18n="quick_email">E-Mail-Adresse *</label><input type="email" id="qf-email" name="email" required/></div>
+            <div class="form-group"><label data-i18n="quick_phone">Telefon (optional)</label><input type="tel" id="qf-phone" name="phone"/></div>
+            <button type="submit" class="btn btn-accent btn-full" id="qf-submit">
+              <span data-i18n="quick_submit">Anfrage einreichen</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <div style="font-size:.72rem;color:rgba(248,250,252,.38);text-align:center;margin-top:.7rem" data-i18n="quick_disclaimer">Professionelle Vertraulichkeit · Anwaltliche Schweigepflicht · DSGVO</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Firm Highlights -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="grid-4">
+        <div class="stat-item">
+          <div class="stat-value" data-i18n="stat_v1">Spezialisiert</div>
+          <div class="stat-label" data-i18n="stat_cases">Internationales Streitrecht</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" data-i18n="stat_v2">Grenzüberschreitend</div>
+          <div class="stat-label" data-i18n="stat_countries">Mehrere Jurisdiktionen</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" data-i18n="stat_v3">Evidenzbasiert</div>
+          <div class="stat-label" data-i18n="stat_recovered">Forensische Finanzanalyse</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" data-i18n="stat_v4">Vertraulich</div>
+          <div class="stat-label" data-i18n="stat_response">Erstberatung · Kein Risiko</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Areas overview -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-tag" data-i18n="services_tag">Leistungsbereiche</span>
+        <span class="accent-rule" style="margin:0 auto .8rem"></span>
+        <h2 class="section-title" data-i18n="services_title">Unsere Rechtspraxisbereiche</h2>
+      </div>
+      <div class="grid-auto">
+        <div class="card card-hover" onclick="showPage('services')">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+          <h3 class="card-title" data-i18n="sv1_title">Grenzüberschreitende Finanzstreitigkeiten</h3>
+          <p class="card-text" data-i18n="sv1_text">Strategische Rechtsberatung in Angelegenheiten mit mehreren Jurisdiktionen und internationalen Finanzbeziehungen.</p>
+        </div>
+        <div class="card card-hover" onclick="showPage('services')">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h3 class="card-title" data-i18n="sv2_title">Verfolgung digitaler Vermögenswerte</h3>
+          <p class="card-text" data-i18n="sv2_text">Evidenzbasierte Finanzverfolgung zur Unterstützung rechtlicher Verfahren und regulatorischer Maßnahmen.</p>
+        </div>
+        <div class="card card-hover" onclick="showPage('services')">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h3 class="card-title" data-i18n="sv3_title">Gerichtliche Offenlegungsanträge</h3>
+          <p class="card-text" data-i18n="sv3_text">Vorbereitung von Offenlegungsstrategien zur Erlangung relevanter Finanzinformationen auf dem Rechtsweg.</p>
+        </div>
+        <div class="card card-hover" onclick="showPage('services')">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
+          <h3 class="card-title" data-i18n="sv4_title">Forensische Finanzanalyse</h3>
+          <p class="card-text" data-i18n="sv4_text">Unabhängige Prüfung von Finanztransaktionen und Blockchain-Datensätzen zur Unterstützung rechtlicher Beurteilungen.</p>
+        </div>
+        <div class="card card-hover" onclick="showPage('services')">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3 class="card-title" data-i18n="sv5_title">Internationales Litigationsmanagement</h3>
+          <p class="card-text" data-i18n="sv5_text">Koordination von Rechtsverfahren über mehrere Jurisdiktionen hinweg, konsistente Strategie und Einbindung lokaler Kanzleien.</p>
+        </div>
+        <div class="card card-hover" onclick="showPage('services')">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <h3 class="card-title" data-i18n="sv7_title">Regulatorische Koordination</h3>
+          <p class="card-text" data-i18n="sv7_text">Kommunikation und Koordination mit nationalen und internationalen Regulierungs- und Strafverfolgungsbehörden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Finora -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <span class="section-tag" data-i18n="trust_tag">Professionelle Differenzierung</span>
+          <span class="accent-rule"></span>
+          <h2 class="section-title mb-4" data-i18n="trust_title">Warum Mandanten Finora beauftragen</h2>
+          <div style="display:flex;flex-direction:column;gap:1.75rem">
+            <div class="trust-item"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><div class="trust-title" data-i18n="trust_1_title">Spezialisierte Rechtspraxis</div><div class="trust-text" data-i18n="trust_1_text">Fokussiert auf komplexe Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten und internationalen Rechtsfragen — nicht als Randleistung, sondern als Kernspezialisierung.</div></div></div>
+            <div class="trust-item"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><div><div class="trust-title" data-i18n="trust_2_title">Internationale Perspektive</div><div class="trust-text" data-i18n="trust_2_text">Koordination mit lokalen Kanzleien, forensischen Sachverständigen und Regulatoren in mehreren Jurisdiktionen — strukturiert und ergebnisorientiert.</div></div></div>
+            <div class="trust-item"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div><div class="trust-title" data-i18n="trust_3_title">Evidenzbasierte Analyse</div><div class="trust-text" data-i18n="trust_3_text">Jede rechtliche Empfehlung basiert auf sorgfältiger Prüfung der verfügbaren Dokumentation, forensischer Datenlage und gerichtlicher Durchsetzbarkeit.</div></div></div>
+            <div class="trust-item"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div><div class="trust-title" data-i18n="trust_4_title">Professionelle Schweigepflicht</div><div class="trust-text" data-i18n="trust_4_text">Vertraulichkeit ist keine Werbeaussage — sie ist eine grundlegende berufliche Verpflichtung, die uneingeschränkt gilt.</div></div></div>
+          </div>
+        </div>
+        <div class="gap-col">
+          <div class="differentiator-card">
+            <blockquote data-i18n="diff_1_quote">"Unser Ansatz verbindet rechtliche Analyse mit forensischer Finanzprüfung — konsequent auf gerichtliche Durchsetzbarkeit ausgerichtet."</blockquote>
+            <div class="differentiator-card-title" data-i18n="diff_1_title">Gerichtsgerichtete Strategie</div>
+            <div class="differentiator-card-sub" data-i18n="diff_1_sub">Litigation Support · Evidenzsicherung · Vollstreckungsplanung</div>
+          </div>
+          <div class="differentiator-card">
+            <blockquote data-i18n="diff_2_quote">"Wir koordinieren regulatorische Kommunikation und behördliche Zusammenarbeit strukturiert und auf der Grundlage anerkannter rechtlicher Verfahren."</blockquote>
+            <div class="differentiator-card-title" data-i18n="diff_2_title">Regulatorische Kompetenz</div>
+            <div class="differentiator-card-sub" data-i18n="diff_2_sub">Behördenkommunikation · Compliance · Internationale Rechtshilfe</div>
+          </div>
+          <div class="differentiator-card">
+            <blockquote data-i18n="diff_3_quote">"Wir beraten Mandanten ehrlich über die rechtlichen Optionen und realistischen Aussichten — unabhängig davon, wie komplex die Ausgangslage ist."</blockquote>
+            <div class="differentiator-card-title" data-i18n="diff_3_title">Strukturierte Erstbewertung</div>
+            <div class="differentiator-card-sub" data-i18n="diff_3_sub">Keine Erfolgsversprechen · Klare Einschätzung · Unverbindlich</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- International section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-tag" data-i18n="intl_tag">Internationale Reichweite</span>
+        <span class="accent-rule" style="margin:0 auto .8rem"></span>
+        <h2 class="section-title" data-i18n="intl_title">Komplexe Angelegenheiten erfordern internationale Koordination</h2>
+      </div>
+      <p style="text-align:center;max-width:680px;margin:0 auto 3rem;color:var(--text-muted);font-size:.95rem;line-height:1.8" data-i18n="intl_sub">Viele Mandatsangelegenheiten berühren mehrere Jurisdiktionen, unterschiedliche regulatorische Rahmenbedingungen und internationale Finanzinstitutionen. Finora koordiniert die Rechtsstrategie gemeinsam mit ausländischen Kanzleien, Finanzexperten, forensischen Sachverständigen und Regulierungsbehörden.</p>
+      <div class="grid-3">
+        <div class="intl-card">
+          <div class="card-icon" style="background:rgba(37,99,235,.12)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+          <div class="intl-card-title" data-i18n="intl_1_title">Jurisdiktionsstrategie</div>
+          <p class="intl-card-text" data-i18n="intl_1_text">Beurteilung der geeignetsten Rechtsforen für komplexe internationale Streitigkeiten unter Berücksichtigung der jeweiligen Rechtslage und Durchsetzbarkeit.</p>
+        </div>
+        <div class="intl-card">
+          <div class="card-icon" style="background:rgba(37,99,235,.12)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div class="intl-card-title" data-i18n="intl_2_title">Koordination ausländischer Kanzleien</div>
+          <p class="intl-card-text" data-i18n="intl_2_text">Zusammenarbeit mit lokalen Rechtsanwälten, forensischen Sachverständigen und Compliance-Spezialisten in den jeweils relevanten Jurisdiktionen.</p>
+        </div>
+        <div class="intl-card">
+          <div class="card-icon" style="background:rgba(37,99,235,.12)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="intl-card-title" data-i18n="intl_3_title">Vollstreckungsplanung</div>
+          <p class="intl-card-text" data-i18n="intl_3_text">Strategische Planung der Vollstreckung nach Urteilen oder verhandelten Einigungen unter Berücksichtigung internationaler Anerkennungsverfahren.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band">
+    <div class="container">
+      <span style="display:block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:.6rem" data-i18n="cta_tag">Vertrauliche Erstbewertung</span>
+      <h2 data-i18n="cta_title">Haben Sie eine komplexe Finanzangelegenheit?</h2>
+      <p data-i18n="cta_sub">Unser Rechtsteam prüft Ihre Anfrage und kontaktiert Sie, um die rechtlichen Erwägungen und Optionen zu besprechen, die für Ihre Situation relevant sind.</p>
+      <button class="btn" style="background:#fff;color:var(--accent);font-weight:700" onclick="showPage('submit-case')" data-i18n="cta_btn">Vertrauliche Bewertung anfordern</button>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- ════════════════════════════════════
+     ABOUT PAGE
+════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-header"><div class="container">
+    <span class="section-tag" data-i18n="about_tag">Die Kanzlei</span>
+    <h1 data-i18n="about_title">Über Finora</h1>
+  </div></div>
+
+  <section class="section section-alt"><div class="container">
+    <div class="grid-2 mb-4">
+      <div>
+        <span class="accent-rule"></span>
+        <h2 style="font-size:1.5rem;color:var(--text);margin-bottom:1rem;font-family:'Playfair Display',serif" data-i18n="about_mission">Die Kanzlei</h2>
+        <p style="color:var(--text-muted);line-height:1.8" data-i18n="about_mission_text">Finora ist eine spezialisierte internationale Rechtspraxis, die Mandanten in technisch und rechtlich komplexen Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, grenzüberschreitenden Durchsetzungsfragen und forensischer Finanzanalyse berät.</p>
+      </div>
+      <div>
+        <span class="accent-rule"></span>
+        <h2 style="font-size:1.5rem;color:var(--text);margin-bottom:1rem;font-family:'Playfair Display',serif" data-i18n="about_vision">Unser Ansatz</h2>
+        <p style="color:var(--text-muted);line-height:1.8" data-i18n="about_vision_text">Unsere Arbeit verbindet rechtliche Analyse, forensische Finanzprüfung und koordinierte Litigationsstrategie, um Mandanten bei der Bewältigung anspruchsvoller internationaler Finanzstreitigkeiten zu unterstützen. Wir beraten sachlich, transparent und ohne unrealistische Erwartungen zu wecken.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title mb-3" data-i18n="about_values">Unsere Grundsätze</h2>
+    <div class="grid-4 mb-4">
+      <div class="value-card"><div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><h3 class="value-title" data-i18n="about_v1">Spezialisierung</h3><p class="value-text" data-i18n="about_v1t">Fokussiert auf komplexe Finanzstreitigkeiten mit internationalem Bezug und digitalen Vermögenswerten.</p></div>
+      <div class="value-card"><div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="value-title" data-i18n="about_v2">Integrität</h3><p class="value-text" data-i18n="about_v2t">Wir handeln ausschließlich im Interesse unserer Mandanten und wahren professionelle Standards.</p></div>
+      <div class="value-card"><div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h3 class="value-title" data-i18n="about_v3">Objektivität</h3><p class="value-text" data-i18n="about_v3t">Jede Empfehlung basiert auf einer nüchternen Analyse der verfügbaren rechtlichen Optionen und Dokumente.</p></div>
+      <div class="value-card"><div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><h3 class="value-title" data-i18n="about_v4">Vertraulichkeit</h3><p class="value-text" data-i18n="about_v4t">Professionelle Schweigepflicht ist eine grundlegende berufliche Verpflichtung — kein Werbemerkmal.</p></div>
+    </div>
+
+    <!-- Legal Process -->
+    <h2 class="section-title mb-3" data-i18n="about_process">Rechtliche Vorgehensweise</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:3rem">
+      <div class="process-step"><div class="process-num">1</div><div><div class="process-title" data-i18n="proc_1_t">Erstbewertung</div><p class="process-text" data-i18n="proc_1_d">Erste rechtliche Prüfung der vorgelegten Informationen und Einschätzung der rechtlichen Ausgangslage.</p></div></div>
+      <div class="process-step"><div class="process-num">2</div><div><div class="process-title" data-i18n="proc_2_t">Dokumentenprüfung</div><p class="process-text" data-i18n="proc_2_d">Strukturierte Prüfung der relevanten Dokumentation, Transaktionsdaten und Korrespondenz.</p></div></div>
+      <div class="process-step"><div class="process-num">3</div><div><div class="process-title" data-i18n="proc_3_t">Forensische Finanzanalyse</div><p class="process-text" data-i18n="proc_3_d">Unabhängige Analyse von Finanztransaktionen und Blockchain-Aktivitäten zur Unterstützung der rechtlichen Bewertung.</p></div></div>
+      <div class="process-step"><div class="process-num">4</div><div><div class="process-title" data-i18n="proc_4_t">Jurisdiktionsprüfung</div><p class="process-text" data-i18n="proc_4_d">Beurteilung der geeignetsten Rechtsforen sowie der jeweils anwendbaren Rechtsordnungen.</p></div></div>
+      <div class="process-step"><div class="process-num">5</div><div><div class="process-title" data-i18n="proc_5_t">Rechtsstrategie</div><p class="process-text" data-i18n="proc_5_d">Entwicklung einer kohärenten Litigation- und Durchsetzungsstrategie in Abstimmung mit dem Mandanten.</p></div></div>
+      <div class="process-step"><div class="process-num">6</div><div><div class="process-title" data-i18n="proc_6_t">Vollstreckungsplanung</div><p class="process-text" data-i18n="proc_6_d">Strategische Planung der Vollstreckung nach Urteilen oder verhandelten Einigungen, ggf. in mehreren Jurisdiktionen.</p></div></div>
+    </div>
+
+    <h2 class="section-title mb-3" data-i18n="about_expertise">Fachliche Kompetenzen</h2>
+    <div class="grid-auto">
+      <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e1">Grenzüberschreitende Finanzstreitigkeiten</span></div>
+      <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e2">Verfolgung digitaler Vermögenswerte &amp; On-Chain-Analyse</span></div>
+      <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e3">Gerichtliche Offenlegungsanträge &amp; Beweissicherung</span></div>
+      <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e4">Forensische Finanzanalyse &amp; Transaktionsprüfung</span></div>
+      <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e5">Regulatorische Koordination &amp; Behördenkommunikation</span></div>
+      <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e6">Jurisdiktionsstrategie &amp; internationale Vollstreckung</span></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ════════════════════════════════════
+     SERVICES PAGE
+════════════════════════════════════ -->
+<div class="page" id="page-services">
+  <div class="page-header"><div class="container">
+    <span class="section-tag" data-i18n="svp_tag">Spezialisierte Rechtsberatung</span>
+    <h1 data-i18n="svp_title">Leistungen im Überblick</h1>
+  </div></div>
+  <section class="section section-light"><div class="container">
+    <div class="grid-auto">
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><h3 class="card-title" data-i18n="sv1_title">Grenzüberschreitende Finanzstreitigkeiten</h3><p class="card-text" data-i18n="sv1_full">Wir beraten Mandanten in komplexen Streitigkeiten mit internationalem Charakter, bei denen mehrere Rechtssysteme, unterschiedliche regulatorische Rahmenbedingungen und internationale Finanzbeziehungen zusammentreffen.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><h3 class="card-title" data-i18n="sv2_title">Verfolgung digitaler Vermögenswerte</h3><p class="card-text" data-i18n="sv2_full">Evidenzbasierte Finanzverfolgung über Blockchain-Netzwerke zur Unterstützung gerichtlicher Verfahren, behördlicher Eingriffe und Vollstreckungsmaßnahmen — strukturiert und gerichtsverwertbar dokumentiert.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div><h3 class="card-title" data-i18n="sv3_title">Gerichtliche Offenlegungsanträge</h3><p class="card-text" data-i18n="sv3_full">Wir erarbeiten gezielte Offenlegungsstrategien und unterstützen Mandanten bei der Vorbereitung und Einreichung gerichtlicher Anträge zur Erlangung relevanter Finanzinformationen durch die zuständigen Rechtswege.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div><h3 class="card-title" data-i18n="sv4_title">Forensische Finanzanalyse</h3><p class="card-text" data-i18n="sv4_full">Unabhängige Prüfung von Finanztransaktionen, wirtschaftlichen Beziehungen und Blockchain-Datensätzen zur Unterstützung rechtlicher Beurteilungen und zur Vorbereitung gerichtlicher sowie regulatorischer Verfahren.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="card-title" data-i18n="sv5_title">Internationales Litigationsmanagement</h3><p class="card-text" data-i18n="sv5_full">Koordination von Rechtsverfahren in mehreren Jurisdiktionen, Sicherstellung einer konsistenten Gesamtstrategie und enge Zusammenarbeit mit lokalen Kanzleien und spezialisierten Beratern vor Ort.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><h3 class="card-title" data-i18n="sv7_title">Regulatorische Koordination</h3><p class="card-text" data-i18n="sv7_full">Koordinierte Kommunikation mit nationalen und internationalen Regulierungs- und Strafverfolgungsbehörden im Rahmen komplexer Finanzangelegenheiten — strukturiert, dokumentiert und auf Basis anerkannter Verfahren.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h3 class="card-title" data-i18n="sv8_title">Beweissicherung</h3><p class="card-text" data-i18n="sv8_full">Strukturierte Erfassung und Sicherung dokumentarischer und digitaler Beweise in einer Form, die den Anforderungen gerichtlicher und behördlicher Verfahren in verschiedenen Jurisdiktionen gerecht wird.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+      <div class="card card-hover" onclick="showPage('submit-case')"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 class="card-title" data-i18n="sv9_title">Vollstreckungsplanung</h3><p class="card-text" data-i18n="sv9_full">Strategische Planung der Vollstreckung nach Urteilen oder verhandelten Einigungen, einschließlich der Koordination internationaler Anerkennungsverfahren und der Zusammenarbeit mit lokalen Vollstreckungsorganen.</p><button class="btn btn-accent btn-sm mt-3" data-i18n="sv_cta">Konsultation anfragen →</button></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ════════════════════════════════════
+     CONTACT PAGE
+════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-header"><div class="container">
+    <span class="section-tag" data-i18n="contact_tag">Vertrauliche Kontaktaufnahme</span>
+    <h1 data-i18n="contact_title">Konsultation anfragen</h1>
+  </div></div>
+  <section class="section section-light"><div class="container">
+    <div class="grid-2" style="align-items:start">
+      <div class="card">
+        <div id="contact-success" class="success-box hidden">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block;margin:0 auto"><polyline points="20 6 9 17 4 12"/></svg>
+          <h3 data-i18n="contact_success_title">Anfrage erfolgreich übermittelt</h3>
+          <p data-i18n="contact_success_text">Unser Rechtsteam wird Ihre Anfrage prüfen und sich kurzfristig mit Ihnen in Verbindung setzen.</p>
+        </div>
+        <form id="contact-form" onsubmit="submitContact(event)">
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="contact_name">Vollständiger Name *</label><input type="text" id="c-name" required/></div>
+            <div class="form-group"><label data-i18n="contact_email">E-Mail-Adresse *</label><input type="email" id="c-email" required/></div>
+          </div>
+          <div class="form-group"><label data-i18n="contact_subject">Betreff (optional)</label><input type="text" id="c-subject"/></div>
+          <div class="form-group"><label data-i18n="contact_message">Ihre Anfrage *</label><textarea id="c-message" rows="6" required></textarea></div>
+          <button type="submit" class="btn btn-accent btn-full" id="contact-submit"><span data-i18n="contact_send">Anfrage sicher übermitteln</span></button>
+        </form>
+      </div>
+      <div>
+        <div class="card mb-3">
+          <h3 style="font-size:1rem;color:var(--text);margin-bottom:.9rem;font-family:'Playfair Display',serif;font-weight:700" data-i18n="contact_info_title">Kontaktdaten</h3>
+          <div class="footer-contact-item"><svg class="footer-contact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--accent)"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span style="color:var(--text-muted);font-size:.8rem" data-i18n="contact_addr">58 Balnagask Circle, AB11 8TT, Aberdeen, Scotland</span></div>
+          <div class="footer-contact-item"><svg class="footer-contact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--accent)"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span style="color:var(--text-muted);font-size:.8rem">info@finora-eu.com/</span></div>
+          <div class="footer-contact-item"><svg class="footer-contact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--accent)"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.12 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.68-1.68a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span style="color:var(--text-muted);font-size:.8rem">+44 44 000 00 00</span></div>
+          <div class="footer-contact-item"><svg class="footer-contact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--accent)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span style="color:var(--text-muted);font-size:.8rem" data-i18n="contact_hours">Mo–Fr: 09:00–18:00 Uhr (MEZ)</span></div>
+        </div>
+        <div class="card">
+          <h3 style="font-size:1rem;color:var(--text);margin-bottom:.75rem;font-family:'Playfair Display',serif;font-weight:700" data-i18n="faq_title">Häufige Fragen</h3>
+          <div class="accordion-item"><button class="accordion-btn" onclick="toggleFaq(this)"><span data-i18n="faq1_q">Welche Angelegenheiten berät Finora?</span><svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="accordion-body"><span data-i18n="faq1_a">Finora berät in technisch und rechtlich komplexen Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, grenzüberschreitenden Transaktionen, forensischer Finanzanalyse und internationalem Streitrecht.</span></div></div>
+          <div class="accordion-item"><button class="accordion-btn" onclick="toggleFaq(this)"><span data-i18n="faq2_q">Vertreten Sie Mandanten international?</span><svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="accordion-body"><span data-i18n="faq2_a">Ja. Wir koordinieren Angelegenheiten in mehreren Jurisdiktionen und arbeiten mit lokalen Kanzleien, forensischen Sachverständigen und Regulatoren zusammen, wo dies rechtlich und strategisch angezeigt ist.</span></div></div>
+          <div class="accordion-item"><button class="accordion-btn" onclick="toggleFaq(this)"><span data-i18n="faq3_q">Wie läuft die vertrauliche Erstbewertung ab?</span><svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="accordion-body"><span data-i18n="faq3_a">Nach Eingang Ihrer Anfrage prüft unser Rechtsteam die vorgelegten Informationen und meldet sich kurzfristig, um die rechtlichen Erwägungen und Optionen zu besprechen, die für Ihre Situation relevant sind.</span></div></div>
+          <div class="accordion-item"><button class="accordion-btn" onclick="toggleFaq(this)"><span data-i18n="faq4_q">Welche Unterlagen sollte ich bereithalten?</span><svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="accordion-body"><span data-i18n="faq4_a">Hilfreich sind jegliche Transaktionsnachweise, relevante Korrespondenz, Kontoauszüge, Verträge und weitere Dokumente, die den Sachverhalt beschreiben. Eine vollständige Dokumentation ermöglicht eine präzisere Ersteinschätzung.</span></div></div>
+          <div class="accordion-item"><button class="accordion-btn" onclick="toggleFaq(this)"><span data-i18n="faq5_q">Sind meine Angaben vertraulich?</span><svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="accordion-body"><span data-i18n="faq5_a">Ja. Alle Anfragen und Informationen werden mit professioneller Vertraulichkeit behandelt. Ihre Angaben werden nicht ohne Ihre ausdrückliche Zustimmung an Dritte weitergegeben.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ════════════════════════════════════
+     SUBMIT CASE / REQUEST CONSULTATION
+════════════════════════════════════ -->
+<div class="page" id="page-submit-case">
+  <div class="page-header"><div class="container">
+    <span class="section-tag" data-i18n="case_tag">Vertraulich · Strukturiert · Professionell</span>
+    <h1 data-i18n="case_title">Vertrauliche Konsultation anfragen</h1>
+  </div></div>
+  <section class="section section-light"><div class="container" style="max-width:700px">
+    <div class="steps" id="case-steps">
+      <div class="step active" id="si-1"><div class="step-dot">1</div><div class="step-label" data-i18n="case_step1">Kontaktdaten</div></div>
+      <div class="step"        id="si-2"><div class="step-dot">2</div><div class="step-label" data-i18n="case_step2">Sachverhaltsdarstellung</div></div>
+      <div class="step"        id="si-3"><div class="step-dot">3</div><div class="step-label" data-i18n="case_step3">Prüfen &amp; Absenden</div></div>
+    </div>
+    <div class="card" id="cs1">
+      <h2 style="font-size:1.25rem;color:var(--text);margin-bottom:1.6rem;font-family:'Playfair Display',serif;font-weight:700" data-i18n="case_step1">Kontaktdaten</h2>
+      <div class="form-group"><label data-i18n="case_name">Vollständiger Name *</label><input type="text" id="f-name"/></div>
+      <div class="form-group"><label data-i18n="case_email">E-Mail-Adresse *</label><input type="email" id="f-email"/></div>
+      <div class="form-group"><label data-i18n="case_phone">Telefon (optional)</label><input type="tel" id="f-phone"/></div>
+      <div id="e1" class="error-msg hidden" data-i18n="err_required">Bitte füllen Sie alle Pflichtfelder aus.</div>
+      <button class="btn btn-accent btn-full" onclick="caseNext(1)"><span data-i18n="case_next">Weiter</span> →</button>
+    </div>
+    <div class="card hidden" id="cs2">
+      <h2 style="font-size:1.25rem;color:var(--text);margin-bottom:1.6rem;font-family:'Playfair Display',serif;font-weight:700" data-i18n="case_step2">Sachverhaltsdarstellung</h2>
+      <div class="form-group"><label data-i18n="case_type">Art der Angelegenheit *</label>
+        <select id="f-type">
+          <option value="">— bitte auswählen —</option>
+          <option value="cross_border"   data-i18n="case_t_1">Grenzüberschreitende Finanzstreitigkeit</option>
+          <option value="asset_tracing"  data-i18n="case_t_2">Verfolgung digitaler Vermögenswerte</option>
+          <option value="disclosure"     data-i18n="case_t_3">Gerichtliche Offenlegungsanträge</option>
+          <option value="intl_dispute"   data-i18n="case_t_4">Internationale Handelsstreitigkeit</option>
+          <option value="platform"       data-i18n="case_t_5">Plattformbezogene Rechtsangelegenheit</option>
+          <option value="regulatory"     data-i18n="case_t_6">Regulatorische Compliance-Angelegenheit</option>
+          <option value="multi_juris"    data-i18n="case_t_7">Komplexes internationales Verfahren</option>
+          <option value="other"          data-i18n="case_t_other">Sonstiges</option>
+        </select>
+      </div>
+      <div class="form-group"><label data-i18n="case_desc">Beschreibung der Angelegenheit *</label><textarea id="f-desc" rows="5" placeholder="Bitte beschreiben Sie den Sachverhalt so präzise wie möglich…"></textarea></div>
+      <div class="form-row">
+        <div class="form-group"><label data-i18n="case_loss">Geschätzter Streitwert (EUR) *</label><input type="number" id="f-loss" min="0"/></div>
+        <div class="form-group"><label data-i18n="case_coins">Betroffene Jurisdiktionen</label><input type="text" id="f-coins" placeholder="z. B. DE, CH, UK…"/></div>
+      </div>
+      <div class="form-group"><label data-i18n="case_date">Zeitraum der Angelegenheit (ca.)</label><input type="date" id="f-date"/></div>
+      <div class="form-group"><div class="checkbox-wrap"><input type="checkbox" id="f-consent"/><label for="f-consent" class="checkbox-label" data-i18n="case_consent">Ich stimme zu, dass Finora meine Angaben vertraulich und ausschließlich zum Zweck der rechtlichen Prüfung und Bewertung meiner Anfrage verarbeitet. Eine Weitergabe an Dritte erfolgt nicht ohne meine ausdrückliche Zustimmung.</label></div></div>
+      <div id="e2" class="error-msg hidden" data-i18n="err_required2">Bitte füllen Sie alle Pflichtfelder aus und bestätigen Sie die Einwilligung.</div>
+      <div style="display:flex;gap:.85rem;flex-wrap:wrap">
+        <button class="btn btn-ghost" onclick="caseBack(2)" style="min-width:100px;flex:0 0 auto"><span data-i18n="case_back">← Zurück</span></button>
+        <button class="btn btn-accent" style="flex:1;min-width:140px;justify-content:center" onclick="caseNext(2)"><span data-i18n="case_next">Weiter</span> →</button>
+      </div>
+    </div>
+    <div class="card hidden" id="cs3">
+      <h2 style="font-size:1.25rem;color:var(--text);margin-bottom:1.2rem;font-family:'Playfair Display',serif;font-weight:700" data-i18n="case_summary">Zusammenfassung</h2>
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:1.4rem;margin-bottom:1.6rem" id="case-review"></div>
+      <div style="display:flex;gap:.85rem;flex-wrap:wrap">
+        <button class="btn btn-ghost" onclick="caseBack(3)" style="min-width:100px;flex:0 0 auto"><span data-i18n="case_back">← Zurück</span></button>
+        <button class="btn btn-accent" style="flex:1;min-width:140px;justify-content:center" onclick="submitCase()"><span data-i18n="case_submit">Konsultation anfordern</span></button>
+      </div>
+    </div>
+    <div class="success-box hidden" id="case-success">
+      <svg width="50" height="50" viewBox="0 0 24 24" fill="none" style="stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block;margin:0 auto 1rem"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+      <h3 data-i18n="case_success_title">Anfrage erfolgreich übermittelt</h3>
+      <div class="success-ref" id="case-ref"></div>
+      <p data-i18n="case_success_text">Ihre Anfrage wurde sicher übermittelt. Unser Rechtsteam wird sich kurzfristig mit Ihnen in Verbindung setzen, um die rechtlichen Optionen und Erwägungen zu besprechen.</p>
+    </div>
+  </div></section>
+</div>
+
+<!-- ════════════════════════════════════
+     IMPRINT
+════════════════════════════════════ -->
+<div class="page" id="page-imprint">
+  <div class="page-header"><div class="container"><h1 data-i18n="imprint_title">Legal Notice</h1></div></div>
+  <section class="section section-alt"><div class="container"><div class="prose">
+    <h2>Company Information</h2>
+    <p><strong>Finora – International Disputes Practice</strong><br/>58 Balnagask Circle<br/>AB11 8TT Aberdeen, Scotland</p>
+    <h2>Contact</h2>
+    <p>Phone: +41 44 000 00 00<br/>Email: info@inora-eu.com/</p>
+    <h2>Commercial Register</h2>
+    <p>Registered company under Great Britain law. Register number: SC869303</p>
+    <h2>Disclaimer</h2>
+    <p>The content of this website is provided for general informational purposes only and does not constitute legal advice. Finora does not accept liability for the content of external links. The operators of linked pages are solely responsible for their content. Professional legal advice should be sought in relation to any specific matter.</p>
+    <h2>Professional Obligations</h2>
+    <p>Finora operates in compliance with applicable professional standards and regulatory requirements governing legal advisory services in the relevant jurisdictions in which it operates.</p>
+  </div></div></section>
+</div>
+
+<!-- ════════════════════════════════════
+     PRIVACY
+════════════════════════════════════ -->
+<div class="page" id="page-privacy">
+  <div class="page-header"><div class="container"><h1 data-i18n="privacy_title">Privacy Policy</h1></div></div>
+  <section class="section section-alt"><div class="container"><div class="prose">
+    <h2>1. Data Controller</h2>
+    <p><strong>Finora – International Disputes Practice</strong><br/>58 Balnagask Circle, AB11 8TT Aberdeen, Scotland<br/>Email: info@finora-eu.com/</p>
+    <h2>2. Purpose of Data Processing</h2>
+    <p>We process personal data submitted through our enquiry and consultation intake forms solely for the purpose of reviewing and responding to your legal enquiry. Data is not used for marketing purposes without your separate consent.</p>
+    <h2>3. Legal Basis</h2>
+    <p>Processing is based on your consent (Art. 6(1)(a) GDPR) and, where applicable, on our legitimate interests in providing legal advisory services (Art. 6(1)(f) GDPR).</p>
+    <h2>4. Your Rights (GDPR)</h2>
+    <p>You have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), and to withdraw consent at any time without affecting the lawfulness of processing based on consent before withdrawal.</p>
+    <h2>5. Confidentiality</h2>
+    <p>All information submitted to Finora is treated with strict professional confidentiality. Information is not disclosed to third parties without your explicit consent, unless required by law or applicable professional obligations.</p>
+    <h2>6. Data Security</h2>
+    <p>We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, disclosure, alteration, or loss. All communications are transmitted over encrypted channels.</p>
+    <h2>7. Cookies</h2>
+    <p>This website does not use tracking cookies or third-party analytics tools. No personal data is collected through automated means without your knowledge.</p>
+  </div></div></section>
+</div>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Finora</div>
+        <p class="footer-tagline" data-i18n="footer_tagline">Spezialisierte internationale Rechtspraxis für komplexe Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, forensischer Finanzanalyse und grenzüberschreitender Litigation.</p>
+        <div style="display:flex;gap:.45rem;flex-wrap:wrap">
+          <span style="display:inline-flex;align-items:center;background:rgba(212,175,55,.15);color:var(--gold);font-size:.7rem;font-weight:700;padding:.23rem .58rem;border-radius:3px;letter-spacing:.05em;text-transform:uppercase">GDPR</span>
+          <span style="display:inline-flex;align-items:center;background:rgba(37,99,235,.18);color:#93C5FD;font-size:.7rem;font-weight:700;padding:.23rem .58rem;border-radius:3px;letter-spacing:.05em;text-transform:uppercase">International</span>
+          <span style="display:inline-flex;align-items:center;background:rgba(212,175,55,.15);color:var(--gold);font-size:.7rem;font-weight:700;padding:.23rem .58rem;border-radius:3px;letter-spacing:.05em;text-transform:uppercase">Vertraulich</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer_services">Leistungen</div>
+        <button class="footer-link" onclick="showPage('services')" data-i18n="sv1_title">Grenzüberschreitende Streitigkeiten</button>
+        <button class="footer-link" onclick="showPage('services')" data-i18n="sv2_title">Verfolgung digitaler Vermögenswerte</button>
+        <button class="footer-link" onclick="showPage('services')" data-i18n="sv4_title">Forensische Finanzanalyse</button>
+        <button class="footer-link" onclick="showPage('services')" data-i18n="sv5_title">Internationales Litigationsmanagement</button>
+        <button class="footer-link" onclick="showPage('services')" data-i18n="sv8_title">Beweissicherung</button>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer_legal">Rechtliches</div>
+        <button class="footer-link" onclick="showPage('imprint')"  data-i18n="nav_imprint">Impressum</button>
+        <button class="footer-link" onclick="showPage('privacy')"  data-i18n="nav_privacy">Datenschutz</button>
+        <button class="footer-link" onclick="showPage('contact')"  data-i18n="nav_contact">Kontakt</button>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer_contact_col">Kontakt</div>
+        <div class="footer-contact-item"><svg class="footer-contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--gold)"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="footer-contact-text" data-i18n="contact_addr">Bahnhofstrasse 100, 8001 Zürich</span></div>
+        <div class="footer-contact-item"><svg class="footer-contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--gold)"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="footer-contact-text">enquiries@finora.eu</span></div>
+        <div class="footer-contact-item"><svg class="footer-contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--gold)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="footer-contact-text" data-i18n="contact_hours">Mo–Fr: 09:00–18:00 Uhr (MEZ)</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom" data-i18n="footer_rights">© 2026 Finora GmbH. Alle Rechte vorbehalten.</div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════ -->
+<script>
+/* ─── TRANSLATIONS ─── */
+var T = {
+  de:{
+    nav_home:'Startseite',nav_about:'Kanzlei',nav_services:'Leistungen',nav_contact:'Kontakt',
+    nav_case:'Konsultation anfragen',nav_imprint:'Impressum',nav_privacy:'Datenschutz',
+    hero_tag:'Finora — Internationale Rechtspraxis für komplexe Finanzstreitigkeiten',
+    hero_title:'Spezialisierte Rechtsberatung in komplexen Streitigkeiten rund um digitale Vermögenswerte',
+    hero_sub:'Finora ist eine spezialisierte internationale Rechtspraxis, die Privatpersonen, Unternehmen und Institutionen in komplexen grenzüberschreitenden Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, forensischer Finanzanalyse und internationaler Litigationsstrategie berät.',
+    hero_cta:'Vertrauliche Bewertung anfordern',hero_more:'Mit unserem Rechtsteam sprechen',
+    quick_form_title:'Vertrauliche Konsultation anfragen',
+    quick_form_sub:'Ihre Anfrage wird vertraulich behandelt und zeitnah geprüft.',
+    quick_firstname:'Vorname *',quick_lastname:'Nachname *',quick_email:'E-Mail-Adresse *',quick_phone:'Telefon (optional)',
+    quick_submit:'Anfrage einreichen',quick_disclaimer:'Professionelle Vertraulichkeit · Anwaltliche Schweigepflicht · DSGVO',
+    quick_success_title:'Anfrage eingegangen',quick_success_text:'Unser Rechtsteam wird Ihre Anfrage prüfen und sich kurzfristig mit Ihnen in Verbindung setzen.',quick_reset:'Neue Anfrage',
+    stat_v1:'Spezialisiert',stat_v2:'Grenzüberschreitend',stat_v3:'Evidenzbasiert',stat_v4:'Vertraulich',
+    stat_cases:'Internationales Streitrecht',stat_countries:'Mehrere Jurisdiktionen',stat_recovered:'Forensische Finanzanalyse',stat_response:'Erstberatung · Kein Risiko',
+    services_tag:'Leistungsbereiche',services_title:'Unsere Rechtspraxisbereiche',
+    sv1_title:'Grenzüberschreitende Finanzstreitigkeiten',
+    sv1_text:'Strategische Rechtsberatung in Angelegenheiten mit mehreren Jurisdiktionen und internationalen Finanzbeziehungen.',
+    sv1_full:'Wir beraten Mandanten in komplexen Streitigkeiten mit internationalem Charakter, bei denen mehrere Rechtssysteme, unterschiedliche regulatorische Rahmenbedingungen und internationale Finanzbeziehungen zusammentreffen.',
+    sv2_title:'Verfolgung digitaler Vermögenswerte',
+    sv2_text:'Evidenzbasierte Finanzverfolgung zur Unterstützung rechtlicher Verfahren und regulatorischer Maßnahmen.',
+    sv2_full:'Evidenzbasierte Finanzverfolgung über Blockchain-Netzwerke zur Unterstützung gerichtlicher Verfahren, behördlicher Eingriffe und Vollstreckungsmaßnahmen — strukturiert und gerichtsverwertbar dokumentiert.',
+    sv3_title:'Gerichtliche Offenlegungsanträge',
+    sv3_text:'Vorbereitung von Offenlegungsstrategien zur Erlangung relevanter Finanzinformationen auf dem Rechtsweg.',
+    sv3_full:'Wir erarbeiten gezielte Offenlegungsstrategien und unterstützen Mandanten bei der Vorbereitung und Einreichung gerichtlicher Anträge zur Erlangung relevanter Finanzinformationen durch die zuständigen Rechtswege.',
+    sv4_title:'Forensische Finanzanalyse',
+    sv4_text:'Unabhängige Prüfung von Finanztransaktionen und Blockchain-Datensätzen zur Unterstützung rechtlicher Beurteilungen.',
+    sv4_full:'Unabhängige Prüfung von Finanztransaktionen, wirtschaftlichen Beziehungen und Blockchain-Datensätzen zur Unterstützung rechtlicher Beurteilungen und zur Vorbereitung gerichtlicher sowie regulatorischer Verfahren.',
+    sv5_title:'Internationales Litigationsmanagement',
+    sv5_text:'Koordination von Rechtsverfahren über mehrere Jurisdiktionen hinweg, konsistente Strategie und Einbindung lokaler Kanzleien.',
+    sv5_full:'Koordination von Rechtsverfahren in mehreren Jurisdiktionen, Sicherstellung einer konsistenten Gesamtstrategie und enge Zusammenarbeit mit lokalen Kanzleien und spezialisierten Beratern vor Ort.',
+    sv7_title:'Regulatorische Koordination',
+    sv7_text:'Kommunikation und Koordination mit nationalen und internationalen Regulierungs- und Strafverfolgungsbehörden.',
+    sv7_full:'Koordinierte Kommunikation mit nationalen und internationalen Regulierungs- und Strafverfolgungsbehörden im Rahmen komplexer Finanzangelegenheiten — strukturiert, dokumentiert und auf Basis anerkannter Verfahren.',
+    sv8_title:'Beweissicherung',
+    sv8_full:'Strukturierte Erfassung und Sicherung dokumentarischer und digitaler Beweise in einer Form, die den Anforderungen gerichtlicher und behördlicher Verfahren in verschiedenen Jurisdiktionen gerecht wird.',
+    sv9_title:'Vollstreckungsplanung',
+    sv9_full:'Strategische Planung der Vollstreckung nach Urteilen oder verhandelten Einigungen, einschließlich der Koordination internationaler Anerkennungsverfahren und der Zusammenarbeit mit lokalen Vollstreckungsorganen.',
+    sv_cta:'Konsultation anfragen →',
+    trust_tag:'Professionelle Differenzierung',trust_title:'Warum Mandanten Finora beauftragen',
+    trust_1_title:'Spezialisierte Rechtspraxis',trust_1_text:'Fokussiert auf komplexe Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten und internationalen Rechtsfragen — nicht als Randleistung, sondern als Kernspezialisierung.',
+    trust_2_title:'Internationale Perspektive',trust_2_text:'Koordination mit lokalen Kanzleien, forensischen Sachverständigen und Regulatoren in mehreren Jurisdiktionen — strukturiert und ergebnisorientiert.',
+    trust_3_title:'Evidenzbasierte Analyse',trust_3_text:'Jede rechtliche Empfehlung basiert auf sorgfältiger Prüfung der verfügbaren Dokumentation, forensischer Datenlage und gerichtlicher Durchsetzbarkeit.',
+    trust_4_title:'Professionelle Schweigepflicht',trust_4_text:'Vertraulichkeit ist keine Werbeaussage — sie ist eine grundlegende berufliche Verpflichtung, die uneingeschränkt gilt.',
+    diff_1_quote:'"Unser Ansatz verbindet rechtliche Analyse mit forensischer Finanzprüfung — konsequent auf gerichtliche Durchsetzbarkeit ausgerichtet."',
+    diff_1_title:'Gerichtsgerichtete Strategie',diff_1_sub:'Litigation Support · Evidenzsicherung · Vollstreckungsplanung',
+    diff_2_quote:'"Wir koordinieren regulatorische Kommunikation und behördliche Zusammenarbeit strukturiert und auf der Grundlage anerkannter rechtlicher Verfahren."',
+    diff_2_title:'Regulatorische Kompetenz',diff_2_sub:'Behördenkommunikation · Compliance · Internationale Rechtshilfe',
+    diff_3_quote:'"Wir beraten Mandanten ehrlich über die rechtlichen Optionen und realistischen Aussichten — unabhängig davon, wie komplex die Ausgangslage ist."',
+    diff_3_title:'Strukturierte Erstbewertung',diff_3_sub:'Keine Erfolgsversprechen · Klare Einschätzung · Unverbindlich',
+    intl_tag:'Internationale Reichweite',intl_title:'Komplexe Angelegenheiten erfordern internationale Koordination',
+    intl_sub:'Viele Mandatsangelegenheiten berühren mehrere Jurisdiktionen, unterschiedliche regulatorische Rahmenbedingungen und internationale Finanzinstitutionen. Finora koordiniert die Rechtsstrategie gemeinsam mit ausländischen Kanzleien, Finanzexperten, forensischen Sachverständigen und Regulierungsbehörden.',
+    intl_1_title:'Jurisdiktionsstrategie',intl_1_text:'Beurteilung der geeignetsten Rechtsforen für komplexe internationale Streitigkeiten unter Berücksichtigung der jeweiligen Rechtslage und Durchsetzbarkeit.',
+    intl_2_title:'Koordination ausländischer Kanzleien',intl_2_text:'Zusammenarbeit mit lokalen Rechtsanwälten, forensischen Sachverständigen und Compliance-Spezialisten in den jeweils relevanten Jurisdiktionen.',
+    intl_3_title:'Vollstreckungsplanung',intl_3_text:'Strategische Planung der Vollstreckung nach Urteilen oder verhandelten Einigungen unter Berücksichtigung internationaler Anerkennungsverfahren.',
+    cta_tag:'Vertrauliche Erstbewertung',cta_title:'Haben Sie eine komplexe Finanzangelegenheit?',
+    cta_sub:'Unser Rechtsteam prüft Ihre Anfrage und kontaktiert Sie, um die rechtlichen Erwägungen und Optionen zu besprechen, die für Ihre Situation relevant sind.',
+    cta_btn:'Vertrauliche Bewertung anfordern',
+    about_tag:'Die Kanzlei',about_title:'Über Finora',
+    about_mission:'Die Kanzlei',about_mission_text:'Finora ist eine spezialisierte internationale Rechtspraxis, die Mandanten in technisch und rechtlich komplexen Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, grenzüberschreitenden Durchsetzungsfragen und forensischer Finanzanalyse berät.',
+    about_vision:'Unser Ansatz',about_vision_text:'Unsere Arbeit verbindet rechtliche Analyse, forensische Finanzprüfung und koordinierte Litigationsstrategie, um Mandanten bei der Bewältigung anspruchsvoller internationaler Finanzstreitigkeiten zu unterstützen. Wir beraten sachlich, transparent und ohne unrealistische Erwartungen zu wecken.',
+    about_values:'Unsere Grundsätze',
+    about_v1:'Spezialisierung',about_v1t:'Fokussiert auf komplexe Finanzstreitigkeiten mit internationalem Bezug und digitalen Vermögenswerten.',
+    about_v2:'Integrität',about_v2t:'Wir handeln ausschließlich im Interesse unserer Mandanten und wahren professionelle Standards.',
+    about_v3:'Objektivität',about_v3t:'Jede Empfehlung basiert auf einer nüchternen Analyse der verfügbaren rechtlichen Optionen und Dokumente.',
+    about_v4:'Vertraulichkeit',about_v4t:'Professionelle Schweigepflicht ist eine grundlegende berufliche Verpflichtung — kein Werbemerkmal.',
+    about_process:'Rechtliche Vorgehensweise',
+    proc_1_t:'Erstbewertung',proc_1_d:'Erste rechtliche Prüfung der vorgelegten Informationen und Einschätzung der rechtlichen Ausgangslage.',
+    proc_2_t:'Dokumentenprüfung',proc_2_d:'Strukturierte Prüfung der relevanten Dokumentation, Transaktionsdaten und Korrespondenz.',
+    proc_3_t:'Forensische Finanzanalyse',proc_3_d:'Unabhängige Analyse von Finanztransaktionen und Blockchain-Aktivitäten zur Unterstützung der rechtlichen Bewertung.',
+    proc_4_t:'Jurisdiktionsprüfung',proc_4_d:'Beurteilung der geeignetsten Rechtsforen sowie der jeweils anwendbaren Rechtsordnungen.',
+    proc_5_t:'Rechtsstrategie',proc_5_d:'Entwicklung einer kohärenten Litigation- und Durchsetzungsstrategie in Abstimmung mit dem Mandanten.',
+    proc_6_t:'Vollstreckungsplanung',proc_6_d:'Strategische Planung der Vollstreckung nach Urteilen oder verhandelten Einigungen, ggf. in mehreren Jurisdiktionen.',
+    about_expertise:'Fachliche Kompetenzen',
+    about_e1:'Grenzüberschreitende Finanzstreitigkeiten',about_e2:'Verfolgung digitaler Vermögenswerte &amp; On-Chain-Analyse',
+    about_e3:'Gerichtliche Offenlegungsanträge &amp; Beweissicherung',about_e4:'Forensische Finanzanalyse &amp; Transaktionsprüfung',
+    about_e5:'Regulatorische Koordination &amp; Behördenkommunikation',about_e6:'Jurisdiktionsstrategie &amp; internationale Vollstreckung',
+    svp_tag:'Spezialisierte Rechtsberatung',svp_title:'Leistungen im Überblick',
+    contact_tag:'Vertrauliche Kontaktaufnahme',contact_title:'Konsultation anfragen',
+    contact_name:'Vollständiger Name *',contact_email:'E-Mail-Adresse *',contact_subject:'Betreff (optional)',contact_message:'Ihre Anfrage *',contact_send:'Anfrage sicher übermitteln',
+    contact_success_title:'Anfrage erfolgreich übermittelt',contact_success_text:'Unser Rechtsteam wird Ihre Anfrage prüfen und sich kurzfristig mit Ihnen in Verbindung setzen.',
+    contact_info_title:'Kontaktdaten',contact_addr:'Bahnhofstrasse 100, 8001 Zürich, Schweiz',contact_hours:'Mo–Fr: 09:00–18:00 Uhr (MEZ)',
+    faq_title:'Häufige Fragen',
+    faq1_q:'Welche Angelegenheiten berät Finora?',faq1_a:'Finora berät in technisch und rechtlich komplexen Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, grenzüberschreitenden Transaktionen, forensischer Finanzanalyse und internationalem Streitrecht.',
+    faq2_q:'Vertreten Sie Mandanten international?',faq2_a:'Ja. Wir koordinieren Angelegenheiten in mehreren Jurisdiktionen und arbeiten mit lokalen Kanzleien, forensischen Sachverständigen und Regulatoren zusammen, wo dies rechtlich und strategisch angezeigt ist.',
+    faq3_q:'Wie läuft die vertrauliche Erstbewertung ab?',faq3_a:'Nach Eingang Ihrer Anfrage prüft unser Rechtsteam die vorgelegten Informationen und meldet sich kurzfristig, um die rechtlichen Erwägungen und Optionen zu besprechen, die für Ihre Situation relevant sind.',
+    faq4_q:'Welche Unterlagen sollte ich bereithalten?',faq4_a:'Hilfreich sind jegliche Transaktionsnachweise, relevante Korrespondenz, Kontoauszüge, Verträge und weitere Dokumente, die den Sachverhalt beschreiben. Eine vollständige Dokumentation ermöglicht eine präzisere Ersteinschätzung.',
+    faq5_q:'Sind meine Angaben vertraulich?',faq5_a:'Ja. Alle Anfragen und Informationen werden mit professioneller Vertraulichkeit behandelt. Ihre Angaben werden nicht ohne Ihre ausdrückliche Zustimmung an Dritte weitergegeben.',
+    case_tag:'Vertraulich · Strukturiert · Professionell',case_title:'Vertrauliche Konsultation anfragen',
+    case_step1:'Kontaktdaten',case_step2:'Sachverhaltsdarstellung',case_step3:'Prüfen &amp; Absenden',
+    case_name:'Vollständiger Name *',case_email:'E-Mail-Adresse *',case_phone:'Telefon (optional)',
+    case_type:'Art der Angelegenheit *',case_desc:'Beschreibung der Angelegenheit *',
+    case_loss:'Geschätzter Streitwert (EUR) *',case_coins:'Betroffene Jurisdiktionen',case_date:'Zeitraum der Angelegenheit (ca.)',
+    case_consent:'Ich stimme zu, dass Finora meine Angaben vertraulich und ausschließlich zum Zweck der rechtlichen Prüfung und Bewertung meiner Anfrage verarbeitet. Eine Weitergabe an Dritte erfolgt nicht ohne meine ausdrückliche Zustimmung.',
+    case_next:'Weiter',case_back:'← Zurück',case_submit:'Konsultation anfordern',case_summary:'Zusammenfassung',
+    case_t_1:'Grenzüberschreitende Finanzstreitigkeit',case_t_2:'Verfolgung digitaler Vermögenswerte',case_t_3:'Gerichtliche Offenlegungsanträge',case_t_4:'Internationale Handelsstreitigkeit',case_t_5:'Plattformbezogene Rechtsangelegenheit',case_t_6:'Regulatorische Compliance-Angelegenheit',case_t_7:'Komplexes internationales Verfahren',case_t_other:'Sonstiges',
+    err_required:'Bitte füllen Sie alle Pflichtfelder aus.',err_required2:'Bitte füllen Sie alle Pflichtfelder aus und bestätigen Sie die Einwilligung.',
+    case_success_title:'Anfrage erfolgreich übermittelt',case_success_text:'Ihre Anfrage wurde sicher übermittelt. Unser Rechtsteam wird sich kurzfristig mit Ihnen in Verbindung setzen, um die rechtlichen Optionen und Erwägungen zu besprechen.',
+    imprint_title:'Impressum',privacy_title:'Datenschutzerklärung',
+    footer_tagline:'Spezialisierte internationale Rechtspraxis für komplexe Finanzstreitigkeiten mit Bezug zu digitalen Vermögenswerten, forensischer Finanzanalyse und grenzüberschreitender Litigation.',
+    footer_services:'Leistungen',footer_legal:'Rechtliches',footer_contact_col:'Kontakt',
+    footer_rights:'© 2024 Finora GmbH. Alle Rechte vorbehalten.'
+  },
+  en:{
+    nav_home:'Home',nav_about:'The Practice',nav_services:'Practice Areas',nav_contact:'Contact',
+    nav_case:'Request Consultation',nav_imprint:'Legal Notice',nav_privacy:'Privacy',
+    hero_tag:'Finora — Specialist International Legal Practice',
+    hero_title:'Specialist Legal Services for Complex Digital Asset Disputes',
+    hero_sub:'Finora is a specialist international legal practice advising individuals, businesses and institutions in complex cross-border financial disputes involving digital assets, forensic financial analysis and international litigation strategy.',
+    hero_cta:'Request a Confidential Assessment',hero_more:'Speak with Our Legal Team',
+    quick_form_title:'Request a Confidential Consultation',
+    quick_form_sub:'Your enquiry will be treated in confidence and reviewed promptly.',
+    quick_firstname:'First Name *',quick_lastname:'Last Name *',quick_email:'Email Address *',quick_phone:'Phone (optional)',
+    quick_submit:'Submit Enquiry',quick_disclaimer:'Professional Confidentiality · Legal Privilege · GDPR',
+    quick_success_title:'Enquiry Received',quick_success_text:'Our legal team will review your enquiry and contact you shortly to discuss the options relevant to your circumstances.',quick_reset:'New Enquiry',
+    stat_v1:'Specialist',stat_v2:'Cross-Border',stat_v3:'Evidence-Led',stat_v4:'Confidential',
+    stat_cases:'International Disputes Practice',stat_countries:'Multiple Jurisdictions',stat_recovered:'Forensic Financial Analysis',stat_response:'Initial Review · No Obligation',
+    services_tag:'Practice Areas',services_title:'Our Legal Practice Areas',
+    sv1_title:'Cross-Border Financial Disputes',
+    sv1_text:'Strategic legal advice in matters involving multiple jurisdictions and international financial relationships.',
+    sv1_full:'We advise clients in complex disputes involving multiple legal systems, differing regulatory frameworks and international financial relationships — providing structured, coordinated legal strategy throughout.',
+    sv2_title:'Digital Asset Tracing',
+    sv2_text:'Evidence-led financial tracing to support legal proceedings and regulatory engagement.',
+    sv2_full:'Evidence-based financial tracing across blockchain networks to support court proceedings, regulatory interventions and enforcement measures — structured and documented to meet evidentiary standards.',
+    sv3_title:'Court-Directed Disclosure Applications',
+    sv3_text:'Preparation of disclosure strategies to obtain relevant financial information through appropriate legal processes.',
+    sv3_full:'We develop targeted disclosure strategies and support clients in preparing and filing court applications to obtain relevant financial information through the appropriate legal channels in the relevant jurisdictions.',
+    sv4_title:'Financial Forensic Analysis',
+    sv4_text:'Independent examination of financial transactions and blockchain records to support legal assessments.',
+    sv4_full:'Independent examination of financial transactions, economic relationships and blockchain records to support legal assessments and to prepare court proceedings and regulatory processes.',
+    sv5_title:'International Litigation Management',
+    sv5_text:'Coordinating legal proceedings across multiple jurisdictions with consistent strategy and local counsel.',
+    sv5_full:'Coordinating legal proceedings across multiple jurisdictions, ensuring a consistent overall strategy, and working closely with local counsel and specialist advisers on the ground.',
+    sv7_title:'Regulatory Engagement',
+    sv7_text:'Coordinating communications with domestic and international regulatory authorities where appropriate.',
+    sv7_full:'Coordinated communication with national and international regulatory and law enforcement authorities in the context of complex financial matters — structured, documented and conducted through recognised procedures.',
+    sv8_title:'Evidence Preservation',
+    sv8_full:'Structured collection and preservation of documentary and digital evidence in a form that meets the requirements of judicial and regulatory proceedings across different jurisdictions.',
+    sv9_title:'Enforcement Planning',
+    sv9_full:'Strategic planning of enforcement following judgments or negotiated resolutions, including coordination of international recognition proceedings and cooperation with local enforcement authorities.',
+    sv_cta:'Request Consultation →',
+    trust_tag:'Professional Differentiators',trust_title:'Why Clients Engage Finora',
+    trust_1_title:'Specialist Legal Practice',trust_1_text:'Focused on complex financial disputes involving digital assets and international legal questions — as a core specialisation, not a peripheral service.',
+    trust_2_title:'International Perspective',trust_2_text:'Coordination with local counsel, forensic specialists and regulators across multiple jurisdictions — structured and results-oriented.',
+    trust_3_title:'Evidence-Based Analysis',trust_3_text:'Every legal recommendation is grounded in careful examination of the available documentation, forensic data and judicial enforceability.',
+    trust_4_title:'Professional Confidentiality',trust_4_text:'Confidentiality is not a marketing claim — it is a fundamental professional obligation that applies without exception.',
+    diff_1_quote:'"Our approach combines legal analysis with forensic financial examination — consistently oriented towards judicial enforceability."',
+    diff_1_title:'Court-Focused Strategy',diff_1_sub:'Litigation Support · Evidence Preservation · Enforcement Planning',
+    diff_2_quote:'"We coordinate regulatory communications and authority engagement in a structured manner, grounded in recognised legal procedure."',
+    diff_2_title:'Regulatory Expertise',diff_2_sub:'Authority Coordination · Compliance · International Legal Assistance',
+    diff_3_quote:'"We advise clients honestly on the legal options and realistic prospects — regardless of the complexity of the starting position."',
+    diff_3_title:'Structured Initial Assessment',diff_3_sub:'No Outcome Guarantees · Clear Assessment · No Obligation',
+    intl_tag:'International Reach',intl_title:'Complex Matters Require International Coordination',
+    intl_sub:'Many matters involve multiple jurisdictions, differing regulatory frameworks and international financial institutions. Finora coordinates legal strategy alongside foreign counsel, financial experts, forensic specialists and regulatory authorities where appropriate.',
+    intl_1_title:'Jurisdiction Strategy',intl_1_text:'Assessment of the most appropriate legal forums for complex international disputes, having regard to the applicable law and enforceability in each relevant jurisdiction.',
+    intl_2_title:'Foreign Counsel Coordination',intl_2_text:'Working with local solicitors, forensic specialists and compliance advisers in the relevant jurisdictions throughout the matter.',
+    intl_3_title:'Enforcement Planning',intl_3_text:'Strategic planning of enforcement following judgments or negotiated resolutions, including coordination of international recognition proceedings.',
+    cta_tag:'Confidential Initial Assessment',cta_title:'Do You Have a Complex Financial Matter?',
+    cta_sub:'Our legal team will review your enquiry and contact you to discuss the legal considerations and options relevant to your circumstances.',
+    cta_btn:'Request a Confidential Assessment',
+    about_tag:'The Practice',about_title:'About Finora',
+    about_mission:'The Practice',about_mission_text:'Finora is a specialist international legal practice advising clients in technically and legally complex financial disputes involving digital assets, cross-border enforcement questions and forensic financial analysis.',
+    about_vision:'Our Approach',about_vision_text:'Our work combines legal analysis, forensic financial examination and coordinated litigation strategy to assist clients navigating sophisticated international financial disputes. We advise clearly and transparently — without creating unrealistic expectations.',
+    about_values:'Our Principles',
+    about_v1:'Specialisation',about_v1t:'Focused on complex financial disputes with international dimension and digital asset involvement.',
+    about_v2:'Integrity',about_v2t:'We act exclusively in the interest of our clients and uphold professional standards.',
+    about_v3:'Objectivity',about_v3t:'Every recommendation is based on a careful analysis of the available legal options and documentation.',
+    about_v4:'Confidentiality',about_v4t:'Professional confidentiality is a fundamental professional obligation — not a marketing feature.',
+    about_process:'Legal Process',
+    proc_1_t:'Initial Assessment',proc_1_d:'Initial legal review of the information presented and assessment of the legal starting position.',
+    proc_2_t:'Evidence Review',proc_2_d:'Structured examination of relevant documentation, transaction data and correspondence.',
+    proc_3_t:'Financial Analysis',proc_3_d:'Independent analysis of financial transactions and on-chain activity to support legal assessment.',
+    proc_4_t:'Jurisdiction Review',proc_4_d:'Assessment of the most appropriate legal forums and the applicable law in each relevant jurisdiction.',
+    proc_5_t:'Legal Strategy',proc_5_d:'Development of a coherent litigation and enforcement strategy in consultation with the client.',
+    proc_6_t:'Enforcement Planning',proc_6_d:'Strategic planning of enforcement following judgments or agreed resolutions, if applicable across multiple jurisdictions.',
+    about_expertise:'Areas of Expertise',
+    about_e1:'Cross-Border Financial Disputes',about_e2:'Digital Asset Tracing &amp; On-Chain Analysis',
+    about_e3:'Court-Directed Disclosure &amp; Evidence Preservation',about_e4:'Forensic Financial Analysis &amp; Transaction Review',
+    about_e5:'Regulatory Engagement &amp; Authority Coordination',about_e6:'Jurisdiction Strategy &amp; International Enforcement',
+    svp_tag:'Specialist Legal Services',svp_title:'Practice Areas Overview',
+    contact_tag:'Confidential Enquiries',contact_title:'Request a Consultation',
+    contact_name:'Full Name *',contact_email:'Email Address *',contact_subject:'Subject (optional)',contact_message:'Your Enquiry *',contact_send:'Submit Securely',
+    contact_success_title:'Enquiry Successfully Submitted',contact_success_text:'Our legal team will review your enquiry and contact you shortly to discuss the options relevant to your circumstances.',
+    contact_info_title:'Contact Details',contact_addr:'Bahnhofstrasse 100, 8001 Zurich, Switzerland',contact_hours:'Mon–Fri: 09:00–18:00 (CET)',
+    faq_title:'Frequently Asked Questions',
+    faq1_q:'What types of matters does Finora advise on?',faq1_a:'Finora advises on technically and legally complex financial disputes involving digital assets, cross-border transactions, forensic financial analysis and international litigation strategy.',
+    faq2_q:'Do you represent clients internationally?',faq2_a:'Yes. We coordinate matters across multiple jurisdictions and work with local counsel, forensic specialists and regulators where this is legally and strategically appropriate.',
+    faq3_q:'How does the confidential assessment process work?',faq3_a:'Following receipt of your enquiry, our legal team reviews the information provided and contacts you promptly to discuss the legal considerations and options relevant to your circumstances.',
+    faq4_q:'What documentation should I prepare?',faq4_a:'Helpful documents include any transaction records, relevant correspondence, account statements, contracts and other documents describing the matter. Complete documentation enables a more precise initial assessment.',
+    faq5_q:'Is my information confidential?',faq5_a:'Yes. All enquiries and information are treated with strict professional confidentiality. Your information will not be disclosed to third parties without your explicit consent.',
+    case_tag:'Confidential · Structured · Professional',case_title:'Request a Confidential Consultation',
+    case_step1:'Contact Details',case_step2:'Matter Overview',case_step3:'Review &amp; Submit',
+    case_name:'Full Name *',case_email:'Email Address *',case_phone:'Phone (optional)',
+    case_type:'Nature of Matter *',case_desc:'Description of Matter *',
+    case_loss:'Estimated Value of Matter (EUR) *',case_coins:'Jurisdictions Involved',case_date:'Approximate Timeframe of Matter',
+    case_consent:'I agree that Finora may process my information confidentially and exclusively for the purpose of legally reviewing and assessing my enquiry. My information will not be disclosed to third parties without my explicit consent.',
+    case_next:'Continue',case_back:'← Back',case_submit:'Request Consultation',case_summary:'Summary',
+    case_t_1:'Cross-Border Financial Dispute',case_t_2:'Digital Asset Tracing',case_t_3:'Court-Directed Disclosure',case_t_4:'International Commercial Dispute',case_t_5:'Platform-Related Legal Matter',case_t_6:'Regulatory Compliance Matter',case_t_7:'Complex Multi-Jurisdiction Proceedings',case_t_other:'Other',
+    err_required:'Please complete all required fields.',err_required2:'Please complete all required fields and confirm the consent declaration.',
+    case_success_title:'Enquiry Successfully Submitted',case_success_text:'Your enquiry has been securely received. Our legal team will contact you shortly to discuss the legal considerations and options relevant to your circumstances.',
+    imprint_title:'Legal Notice',privacy_title:'Privacy Policy',
+    footer_tagline:'Specialist international legal practice for complex financial disputes involving digital assets, forensic financial analysis and cross-border litigation.',
+    footer_services:'Practice Areas',footer_legal:'Legal',footer_contact_col:'Contact',
+    footer_rights:'© 2024 Finora GmbH. All rights reserved.'
+  }
+};
+
+var currentLang = 'de';
+function t(key){ return (T[currentLang]&&T[currentLang][key])||(T.de[key])||key; }
+function applyTranslations(){
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var v=t(el.getAttribute('data-i18n')); if(v) el.innerHTML=v;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+    var v=t(el.getAttribute('data-i18n-placeholder')); if(v) el.placeholder=v;
+  });
+  var sub = document.getElementById('nav-sub');
+  if(sub) sub.innerHTML = currentLang==='en'
+    ? 'International<br>Disputes Practice'
+    : 'Internationale<br>Rechtspraxis';
+}
+function setLang(lang){
+  currentLang=lang;
+  document.getElementById('btn-de').classList.toggle('active',lang==='de');
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  applyTranslations();
+}
+
+/* ─── THEME ─── */
+function toggleTheme(){
+  var isDark=document.documentElement.getAttribute('data-theme')==='dark';
+  document.documentElement.setAttribute('data-theme',isDark?'light':'dark');
+  document.getElementById('theme-icon').textContent=isDark?'☀️':'🌙';
+}
+
+/* ─── NAVIGATION ─── */
+function showPage(id){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
+  var pg=document.getElementById('page-'+id);
+  if(pg){pg.classList.add('active');window.scrollTo(0,0);}
+  ['home','about','services','contact'].forEach(function(n){
+    var el=document.getElementById('nl-'+n);
+    if(el) el.classList.toggle('active',n===id);
+  });
+  closeMobile();
+  if(id==='submit-case') resetCaseForm();
+}
+function toggleMobile(){
+  var menu=document.getElementById('mobile-menu');
+  var btn=document.getElementById('hamburger-btn');
+  var isOpen=menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+function closeMobile(){
+  document.getElementById('mobile-menu').classList.remove('open');
+  document.getElementById('hamburger-btn').setAttribute('aria-expanded','false');
+}
+
+/* ─── QUICK FORM ─── */
+async function submitQuickForm(event) {
+    event.preventDefault();
+
+    const form = document.getElementById("quick-form");
+    const submitBtn = document.getElementById("qf-submit");
+
+    // Set reply-to automatically
+    form.querySelector('input[name="_replyto"]').value =
+        document.getElementById("qf-email").value;
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = "Sending...";
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        if (response.ok) {
+            form.classList.add("hidden");
+            document.getElementById("quick-success").classList.remove("hidden");
+            form.reset();
+        } else {
+            alert("Submission failed. Please try again.");
+        }
+    } catch (error) {
+        alert("Unable to connect. Please try again.");
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = `
+        <span>Submit</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+        </svg>`;
+}
+function resetQuickForm(){
+  document.getElementById("quick-form").reset();
+  document.getElementById("quick-form").classList.remove("hidden");
+  document.getElementById("quick-success").classList.add("hidden");
+  var btn=document.getElementById('qf-submit');
+  btn.disabled=false;
+  btn.innerHTML='<span data-i18n="quick_submit">'+t('quick_submit')+'</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+  ['qf-first','qf-last','qf-email','qf-phone'].forEach(function(id){document.getElementById(id).value='';});
+}
+
+/* ─── CONTACT ─── */
+function submitContact(e){
+  e.preventDefault();
+  document.getElementById('contact-submit').disabled=true;
+  setTimeout(function(){
+    document.getElementById('contact-form').classList.add('hidden');
+    document.getElementById('contact-success').classList.remove('hidden');
+  },1000);
+}
+
+/* ─── FAQ ─── */
+function toggleFaq(btn){
+  var body=btn.nextElementSibling,icon=btn.querySelector('.accordion-icon'),isOpen=body.classList.contains('open');
+  document.querySelectorAll('.accordion-body.open').forEach(function(b){b.classList.remove('open');b.previousElementSibling.querySelector('.accordion-icon').classList.remove('open');});
+  if(!isOpen){body.classList.add('open');icon.classList.add('open');}
+}
+
+/* ─── CASE WIZARD ─── */
+var caseData={};
+function caseNext(step){
+  if(step===1){
+    var name=document.getElementById('f-name').value.trim(),email=document.getElementById('f-email').value.trim();
+    if(!name||!email){document.getElementById('e1').classList.remove('hidden');return;}
+    document.getElementById('e1').classList.add('hidden');
+    caseData.name=name;caseData.email=email;caseData.phone=document.getElementById('f-phone').value.trim();
+    document.getElementById('cs1').classList.add('hidden');document.getElementById('cs2').classList.remove('hidden');
+    document.getElementById('si-1').classList.remove('active');document.getElementById('si-1').classList.add('done');
+    document.getElementById('si-2').classList.add('active');
+  } else if(step===2){
+    var type=document.getElementById('f-type').value,desc=document.getElementById('f-desc').value.trim(),loss=document.getElementById('f-loss').value,consent=document.getElementById('f-consent').checked;
+    if(!type||!desc||!loss||!consent){document.getElementById('e2').classList.remove('hidden');return;}
+    document.getElementById('e2').classList.add('hidden');
+    caseData.type=type;caseData.desc=desc;caseData.loss=loss;caseData.coins=document.getElementById('f-coins').value;caseData.date=document.getElementById('f-date').value;
+    document.getElementById('cs2').classList.add('hidden');document.getElementById('cs3').classList.remove('hidden');
+    document.getElementById('si-2').classList.remove('active');document.getElementById('si-2').classList.add('done');
+    document.getElementById('si-3').classList.add('active');
+    var r=document.getElementById('case-review');
+    r.innerHTML='<div class="review-row"><span class="review-label">'+t('case_name')+'</span><span class="review-value">'+caseData.name+'</span></div>'+
+      '<div class="review-row"><span class="review-label">'+t('case_email')+'</span><span class="review-value">'+caseData.email+'</span></div>'+
+      (caseData.phone?'<div class="review-row"><span class="review-label">'+t('case_phone')+'</span><span class="review-value">'+caseData.phone+'</span></div>':'')+
+      '<div class="review-row"><span class="review-label">'+t('case_type')+'</span><span class="review-value">'+caseData.type.replace(/_/g,' ')+'</span></div>'+
+      '<div class="review-row"><span class="review-label">'+t('case_loss')+'</span><span class="review-value">€'+Number(caseData.loss).toLocaleString()+'</span></div>'+
+      (caseData.coins?'<div class="review-row"><span class="review-label">'+t('case_coins')+'</span><span class="review-value">'+caseData.coins+'</span></div>':'')+
+      (caseData.date?'<div class="review-row"><span class="review-label">'+t('case_date')+'</span><span class="review-value">'+caseData.date+'</span></div>':'');
+  }
+}
+function caseBack(step){
+  if(step===2){document.getElementById('cs2').classList.add('hidden');document.getElementById('cs1').classList.remove('hidden');document.getElementById('si-2').classList.remove('active');document.getElementById('si-1').classList.remove('done');document.getElementById('si-1').classList.add('active');}
+  else if(step===3){document.getElementById('cs3').classList.add('hidden');document.getElementById('cs2').classList.remove('hidden');document.getElementById('si-3').classList.remove('active');document.getElementById('si-2').classList.remove('done');document.getElementById('si-2').classList.add('active');}
+}
+function submitCase(){
+  var ref='FIN-'+Date.now().toString(36).toUpperCase();
+  document.getElementById('case-ref').textContent=ref;
+  document.getElementById('cs3').classList.add('hidden');
+  document.getElementById('case-steps').classList.add('hidden');
+  document.getElementById('case-success').classList.remove('hidden');
+}
+function resetCaseForm(){
+  ['cs1','cs2','cs3'].forEach(function(id){document.getElementById(id).classList.add('hidden');});
+  document.getElementById('cs1').classList.remove('hidden');
+  document.getElementById('case-success').classList.add('hidden');
+  document.getElementById('case-steps').classList.remove('hidden');
+  ['si-1','si-2','si-3'].forEach(function(id){var el=document.getElementById(id);el.classList.remove('active','done');});
+  document.getElementById('si-1').classList.add('active');
+  document.getElementById('e1').classList.add('hidden');
+  document.getElementById('e2').classList.add('hidden');
+  document.getElementById('f-consent').checked=false;
+}
+
+/* ════════════════════════════════════
+   PARALLAX — multi-layer hero
+════════════════════════════════════ */
+var pxLayers = [
+  { el: null, id: 'px-dots', speed: 0.42 },
+  { el: null, id: 'px-glow', speed: 0.28 },
+  { el: null, id: 'px-gold', speed: 0.18 },
+  { el: null, id: 'px-f1',   speed: 0.35 },
+  { el: null, id: 'px-f2',   speed: 0.20 },
+  { el: null, id: 'px-f3',   speed: 0.50 }
+];
+pxLayers.forEach(function(layer){
+  layer.el = document.getElementById(layer.id);
+});
+var ticking = false;
+function runParallax(){
+  var scrollY = window.pageYOffset;
+  pxLayers.forEach(function(layer){
+    if(layer.el){
+      layer.el.style.transform = 'translateY(' + (scrollY * layer.speed) + 'px)';
+    }
+  });
+  ticking = false;
+}
+/* Only run parallax on larger screens */
+if(window.innerWidth > 960){
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      requestAnimationFrame(runParallax);
+      ticking = true;
+    }
+  }, { passive: true });
+}
+
+/* ─── INIT ─── */
+applyTranslations();
+</script>
+</body>
+</html>
